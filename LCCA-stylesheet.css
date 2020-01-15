@@ -1,0 +1,232 @@
+/*Last updated 1-15-2020*/
+
+* {
+	box-sizing:border-box;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+a.title:hover {
+	text-decoration: none !important;
+}
+
+li a, footer a {
+	color: black;
+}
+
+.active, .dot:hover {
+  background: radial-gradient(#009900 15%, #003300 90%)  !important; /*alternatively #717171*/
+}
+
+body {
+	background-image: url("old-hands1.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+    padding: 0em 1.25em 1.25em 1.25em;
+	width: 80%;
+	margin: 3em auto;
+	padding: 0em;
+	border: 5px groove gray;
+}
+button {
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 1em;
+	display: inline;
+	font-family: Times New Roman;
+	font-size: 1em;
+	background: linear-gradient(#009900 15%, #003300 90%);
+	text-transform: uppercase;
+}
+
+.caption {
+
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 16px;
+  width: 90%;
+}
+.date
+{
+	text-align: left;
+	font-size: 1.2em;
+	color: orange;
+}
+div {
+	background-color: transparent;
+    padding: 0.625em;
+	font-size: 1em;
+}
+/* The dots/bullets on the carousel */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dropdown
+{
+	display:inline-block;
+	position: relative;
+}
+.dropdown-content {
+	display: none;
+	color: blue;
+	position: absolute;
+	background-color: white;
+	list-style: none;
+	padding: .25em;
+	border: 2px groove darkgray;
+	border-radius: 1em;
+}
+.dropdown:hover .dropdown-content {
+	display:block;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Hide all but first slide by default */
+.mySlides
+{
+	display: none;
+	padding: 1.5em;
+	position: relative;
+}
+
+.first {
+	display: block;
+}
+footer {
+	clear: both;
+	border: 5px groove gray;
+	background: linear-gradient(lightgray 15%, darkgray 85%);
+	padding: 0.625em;
+}
+
+h1 {
+	padding: 0.625em;
+	margin: 0em;
+	font-size: 52px;
+}
+
+.heading {
+	border: 5px groove gray;
+	background: linear-gradient(#009900 15%, #003300 90%); /*#009933;*/
+}
+hr {
+	clear: both;
+}
+img 
+{
+	border-radius: 5px;
+}
+input
+{
+	font-size: medium;
+}
+.left {
+	float:left;
+}
+li {
+	margin: .25em;
+}
+menu {
+	clear: both;
+	background-color: transparent;
+	padding: 0px !important;
+}
+
+.news {
+	text-align: center;
+}
+/* Next & previous buttons */
+.next {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.prev {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  text-decoration: none;
+}
+.right {
+	float:right;
+}
+section {
+	display:block;
+	clear: both;
+	background-color: transparent;
+	border: 5px groove gray;
+	padding: 0.625em;
+	color: white;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.small {
+	height:2em;
+	width:2em;
+	display:inline;
+	margin: -0.5em 0.5em 0em -0.5em;
+}
+span {
+	margin: auto;
+}
+
+.title-text {
+    float: left;
+}
+.title {
+	text-decoration: none;
+	color: black;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
