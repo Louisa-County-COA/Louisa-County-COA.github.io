@@ -197,12 +197,13 @@ section {
 	padding: 0.625em;
 	color: white;
 }
-/* Slideshow container */
-.slideshow-container {
-  max-width: 500px;
+/* Carousel */
+.carousel {
+  max-width: 750px;
   position: relative;
   margin: auto;
 }
+
 .small {
 	height:2em;
 	width:2em;
