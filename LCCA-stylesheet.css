@@ -115,6 +115,12 @@ div {
 .first {
 	display: block;
 }
+
+.flex {
+	display: flex;
+	flex-direction: row;
+}
+
 footer {
 	clear: both;
 	border: 5px groove gray;
@@ -125,12 +131,13 @@ footer {
 h1 {
 	padding: 0.625em;
 	margin: 0em;
-	font-size: 52px;
+	font-size: 42px;
 }
 
 .heading {
 	border: 5px groove gray;
-	background: linear-gradient(#009900 15%, #003300 90%); /*#009933;*/
+	background: linear-gradient(#009900 15%, #003300 100%); /*#009933;*/
+    min-height: 8.5em;
 }
 hr {
 	clear: both;
@@ -208,10 +215,10 @@ section {
 	height:2em;
 	width:2em;
 	display:inline;
-	margin: -0.5em 0.5em 0em -0.5em;
+	margin: -0.3em 0.5em 0em -0.5em;
 }
 span {
-	margin: auto;
+	margin: -0.5em 0 0 0;
 }
 
 .title-text {
