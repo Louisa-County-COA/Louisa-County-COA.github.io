@@ -6,18 +6,18 @@
 
 a{
 	text-decoration: none;
-	color: white;
+	color: black;
 }
 a:hover {
 	text-decoration: underline;
 }
 
-a.title:hover {
-	text-decoration: none !important;
+h2 a {
+	color: white;
 }
 
-li a, footer a {
-	color: black;
+a.title:hover {
+	text-decoration: none !important;
 }
 
 .active, .dot:hover {
@@ -37,14 +37,14 @@ body {
 	border: 5px groove gray;
 }
 button {
-	color: white;
+	color: black;
 	margin: 5px;
 	padding: 5px;
-	border-radius: 1em;
+	border: none;
 	display: inline;
 	font-family: Times New Roman;
 	font-size: 1em;
-	background: linear-gradient(#009900 15%, #003300 90%);
+	background-color: transparent;
 	text-transform: uppercase;
 }
 
@@ -87,7 +87,7 @@ div {
 	display: none;
 	color: blue;
 	position: absolute;
-	background-color: white;
+	background: radial-gradient(#ffcc33 25%, #e6ac00 85%);
 	list-style: none;
 	padding: .25em;
 	border: 2px groove darkgray;
@@ -158,7 +158,8 @@ li {
 }
 menu {
 	clear: both;
-	background-color: transparent;
+	background: radial-gradient(#ffcc33 25%, #e6ac00 85%);
+	border: 5px groove gray;
 	padding: 0px !important;
 }
 
@@ -219,6 +220,11 @@ section {
 }
 span {
 	margin: -0.5em 0 0 0;
+}
+.submit {
+	border: outset gray;
+	border-radius: 15px;
+	color: white;
 }
 
 .title-text {
