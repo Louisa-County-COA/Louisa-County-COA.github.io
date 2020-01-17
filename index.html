@@ -7,7 +7,7 @@
 	<meta name="description" content="Homepage for the Louisa County Commission on Aging.">
 	<meta name="author" content="Brendan Ferreri-Hanberry" />
 	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-	<meta name="dcterms.modified" content="2020-1-15" />
+	<meta name="dcterms.modified" content="2020-1-17" />
 	<meta name="viewport" content="width=device-width" initial-scale="1" >
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
@@ -27,16 +27,16 @@ var toggleFontSize = function() {
 	console.log(button);
 	if (button == "16px") {
 		$("button").css("font-size", "small");
+		$("li").css("font-size", "small");
 		$("section").css("font-size", "medium");
 		$("footer").css("font-size", "medium");
-		$("h1").css("font-size", "42px");
 		$("input").css("font-size", "medium");
 	}
 	else {
 		$("button").css("font-size", "medium");
+		$("li").css("font-size", "medium");
 		$("section").css("font-size", "large");
 		$("footer").css("font-size", "large");
-		$("h1").css("font-size", "52px");
 		$("input").css("font-size", "large");
 	}
 };
@@ -80,13 +80,16 @@ function showSlides(n) {
 			Commission on Aging</span>
 		</a>
 	</h1>
-	<div class="right">
-		<form action="" method="get">
+	<div class="right" id="search-and-size">
+        <form action="" method="get">
 			<input type="text" placeholder="Search..." value="">
 			</input>
 			<button type="submit" class="submit">SUBMIT</button>
 		</form>
-    </div>
+		<div class="right">
+		    <button id="toggleButton" class="submit" onclick="toggleFontSize()">TOGGLE FONT SIZE</button>
+	    </div>
+	</div>
 </div>
 <menu>
 	<div class="dropdown">
