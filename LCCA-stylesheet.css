@@ -1,4 +1,4 @@
-/*Last updated 1-15-2020*/
+/*Last updated 1-17-2020*/
 
 * {
 	box-sizing:border-box;
@@ -197,6 +197,9 @@ menu {
 }
 .right {
 	float:right;
+}
+#search-and-size {
+	margin: -4em 0 0 0;
 }
 section {
 	display:block;
