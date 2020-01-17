@@ -155,6 +155,7 @@ input
 }
 li {
 	margin: .25em;
+	text-transform: uppercase;
 }
 menu {
 	clear: both;
