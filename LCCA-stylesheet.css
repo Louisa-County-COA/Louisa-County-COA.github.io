@@ -171,7 +171,9 @@ menu {
 	border: 5px groove gray;
 	padding: 0px !important;
 }
-
+.minutes a{
+	color: white;
+}
 .news {
 	text-align: center;
 }

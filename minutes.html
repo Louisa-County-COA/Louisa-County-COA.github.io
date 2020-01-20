@@ -40,35 +40,6 @@ var toggleFontSize = function() {
 		$("input").css("font-size", "large");
 	}
 };
-// Slideshow
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
 </script>
 
 <div class="heading">
@@ -98,7 +69,7 @@ function showSlides(n) {
 		<ul class="dropdown-content">
 			<li><a href="">BYLAWS</a></li>
 			<li><a href="">MISSION</a></li>
-			<li><a href="minutes.html">MINUTES</a></li>
+			<li><a href="">MINUTES</a></li>
 		</ul>
 	</div>
 	<div class="dropdown">
@@ -154,44 +125,25 @@ function showSlides(n) {
 </menu>
 
 <div>
-<section>
-<h2 class="news">In the News</h2>
- <!-- Carousel -->
-<div class="carousel">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade first">
-    <img src="Virginia-silhouette-green.png" style="width:100%">
-    <div class="caption"><span class="date">1/6/2020</span>
-	<h2><a href="">Caption One: It Begins</a></h2></div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="Flag_of_Virginia.svg" style="width:100%">
-    <div class="caption"><span class="date">1/5/2020</span>
-	<h2><a href="">Caption Two: The Caption Strikes Back</a></h2></div>
-  </div>
-
-  <div class="mySlides fade">
-    <img src="Louisa_County_Courthouse.jpg" style="width:100%">
-    <div class="caption"><span class="date">1/4/2020</span>
-	<h2><a href="">Caption Three: Return of the Caption</a></h2></div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br />
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot active" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-<br />
-</section>
-</div>
+	<section class="minutes">
+		<h2>Minutes</h2>
+		<div><a href="minutes/Feb-6-18.pdf" download>February 6, 2018</a></div>
+		<div><a href="minutes/Mar-7-18.pdf" download>March 7, 2018</a></div>
+		<div><a href="minutes/Apr-11-18.pdf" download>April 11, 2018</a></div>
+		<div><a href="minutes/May-2-18.pdf" download>May 2, 2018</a></div>
+		<div><a href="minutes/Aug-1-18.pdf" download>August 1, 2018</a></div>
+        <div><a href="minutes/Oct-2-18.pdf" download>Oct 2, 2018</a></div>
+		<div><a href="minutes/3-16-19.docx" download>March 16, 2019</a></div>
+		<div><a href="minutes/4-1-19.docx" download>April 1, 2019</a></div>
+		<div><a href="minutes/5-1-19.docx" download>May 1, 2019</a></div>
+		<div><a href="minutes/6-5-19.docx" download>June 5, 2019</a></div>
+		<div><a href="minutes/9-4-19.docx" download>September 4, 2019</a></div>
+		<div><a href="minutes/10-2-19.docx" download>October 2, 2019</a></div>
+		<div><a href="minutes/11-6-19.docx" download>November 6, 2019</a></div>
+		<div><a href="minutes/12-4-19.docx" download>December 4, 2019</a></div>
+		<div><a href="minutes/1-7-20.docx" download>January 7, 2020</a></div>
+	</section>
+	
 <menu>
 	<div>
 		<button><a href="index.html">HOME</a></button>
@@ -200,17 +152,7 @@ function showSlides(n) {
 		<button><a href="https://www.louisacounty.com/">LOUISA COUNTY</a></button>
 	</div>
 </menu>
-<div>
-	<section>
-		<h2>Welcome to the first section of sample text!</h2>
-		Sample text goes here!
-	</section>
-	<section>
-		<h2>Welcome to the second section of sample text!</h2>
-		Even more sample text goes here! :D
-	</section>
 </div>
-<br />
 <hr />
 <div>
 	<footer>
