@@ -127,7 +127,11 @@ footer {
 	background: linear-gradient(lightgray 15%, darkgray 85%);
 	padding: 0.625em;
 }
-
+form {
+	font-size: medium;
+    border-radius: 15px;
+	display: flex;
+}
 h1 {
 	padding: 0.625em;
 	margin: 0em;
@@ -136,7 +140,7 @@ h1 {
 
 .heading {
 	border: 5px groove gray;
-	background: linear-gradient(#009900 15%, #003300 100%); /*#009933;*/
+	background: linear-gradient(#009900 15%, #003300 100%);
     min-height: 8.5em;
 }
 
@@ -154,7 +158,6 @@ input {
 	border: 2px outset darkgray;
 	padding: .35em;
 }
-
 .left {
 	float:left;
 }
@@ -206,6 +209,10 @@ menu {
 #search-and-size {
 	margin: -4em 0 0 0;
 }
+.search {
+	height: 28px;
+	width: 36px; 
+}
 section {
 	display:block;
 	clear: both;
@@ -231,11 +238,8 @@ span {
 	margin: -0.5em 0 0 0;
 }
 .submit {
-	border: outset gray;
-	border-radius: 15px;
-	color: white;
+    margin: 0 0 -4px 0;
 }
-
 .title-text {
     float: left;
 }
@@ -243,7 +247,14 @@ span {
 	text-decoration: none;
 	color: black;
 }
-
+.toggle{
+	color: white;
+	font-size: medium;
+    border-radius: 15px;
+	border: 3px outset darkgray;
+	padding: .35em;
+	background: linear-gradient(#009900 15%, #003300 100%);
+}
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
