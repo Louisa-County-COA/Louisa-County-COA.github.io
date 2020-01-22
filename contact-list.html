@@ -40,6 +40,35 @@ var toggleFontSize = function() {
 		$("input").css("font-size", "large");
 	}
 };
+// Slideshow
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
 </script>
 
 <div class="heading">
@@ -69,7 +98,7 @@ var toggleFontSize = function() {
 		<ul class="dropdown-content">
 			<li><a href="">BYLAWS</a></li>
 			<li><a href="">MISSION</a></li>
-			<li><a href="">MINUTES</a></li>
+			<li><a href="minutes.html">MINUTES</a></li>
 		</ul>
 	</div>
 	<div class="dropdown">
@@ -122,27 +151,123 @@ var toggleFontSize = function() {
 		</ul>
 	</div>
 </menu>
-
 <div>
-	<section class="minutes">
-		<h2>Minutes</h2>
-		<div><a href="minutes/Feb-6-18.pdf" download>February 6, 2018</a></div>
-		<div><a href="minutes/Mar-7-18.pdf" download>March 7, 2018</a></div>
-		<div><a href="minutes/Apr-11-18.pdf" download>April 11, 2018</a></div>
-		<div><a href="minutes/May-2-18.pdf" download>May 2, 2018</a></div>
-		<div><a href="minutes/Aug-1-18.pdf" download>August 1, 2018</a></div>
-        <div><a href="minutes/Oct-2-18.pdf" download>Oct 2, 2018</a></div>
-		<div><a href="minutes/3-16-19.docx" download>March 16, 2019</a></div>
-		<div><a href="minutes/4-1-19.docx" download>April 1, 2019</a></div>
-		<div><a href="minutes/5-1-19.docx" download>May 1, 2019</a></div>
-		<div><a href="minutes/6-5-19.docx" download>June 5, 2019</a></div>
-		<div><a href="minutes/9-4-19.docx" download>September 4, 2019</a></div>
-		<div><a href="minutes/10-2-19.docx" download>October 2, 2019</a></div>
-		<div><a href="minutes/11-6-19.docx" download>November 6, 2019</a></div>
-		<div><a href="minutes/12-4-19.docx" download>December 4, 2019</a></div>
-		<div><a href="minutes/1-7-20.docx" download>January 7, 2020</a></div>
-	</section>
-	
+<section>
+<h2>Contacts</h2>
+<div class="contacts">
+	<div class="person">
+	Ginger Dillard<br />
+	Director of advocacy services <br />
+	JABA Charlottesville<br />
+	<a href="mailto:gdillard@jabacares.org">gdillard@jabacares.org</a><br />
+	Phone: 434-260-8716<br />
+	674 Hillsdale Dr. Suite 9<br />
+	Charlottesville, VA 22901<br />
+	</div>
+	<div class="person">
+	Crystal Donovan<br />
+	JABA Manager<br />
+	Activities and Events Committee<br />
+	<a href="mailto:CDonovan@jabacares.org">CDonovan@jabacares.org</a><br />
+	Phone: 540-967-4433<br />
+	522 Industrial Dr. A<br />
+	Louisa, VA 23093
+	</div>
+	<div class="person">
+	Willie Gentry<br />
+	BOS representative<br />
+	Membership, Bylaws Committees<br />
+	<a href="mailto:lcbs_cd@louisa.org">mailto:lcbs_cd@louisa.org</a><br />
+	Phone: 540-967-0401<br />
+	Fax: 540-967-3411<br />
+	1 Woolfolk Ave<br />
+	Louisa, VA 23093<br />
+	</div>
+	<div class="person">
+	Barbara Hollins<br />
+	Vice President Pro Temp<br />
+	Publicity Committee<br />
+	Jackson District<br />
+	Cell: 540-872-8684<br />
+	Home: 540-872-3613<br />
+	11793 Jefferson Hwy.<br />
+	Mineral, VA 23117<br />
+	</div>
+	<div class="person">
+	Bob Kuhnle<br />
+	Membership, Bylaws Committees<br />
+	<a href="mailto:bob.kuhnle@gmail.com">bob.kuhnle@gmail.com</a><br />
+	Phone: 540-205-0390<br />
+	</div>
+	<div class="person">
+	Alex MacCormack<br />
+	AARP representative<br />
+	Activities and Events Committees<br />
+	<a href="mailto:alexmac503@gmail.com">alexmac503@gmail.com</a><br />
+	Phone: 540-967-3619<br />
+	503 Firehouse Drive<br />
+	Louisa, VA 23093<br />
+	</div>
+	<div class="person">
+	Lillian Morris<br />
+	Treasurer<br />
+	Budget Committee<br />
+	Mountain Road District<br />
+	<a href="dariesmorrisjr@hotmail.com">dariesmorrisjr@hotmail.com</a><br />
+	Home: 804-556-8684<br />
+	3410 Holly Grover Dr.<br />
+	Bumpass, VA 23024<br />
+	</div>
+	<div class="person">
+	James Smith<br />
+	Director, Parks and Rec.<br />
+	Membership Committee<br />
+	<a href="mailto:jsmith@louisa.org">jsmith@louisa.org</a> <br />
+	Home: 804-350-4115<br />
+	Cell: 540-273-0481<br />
+	PO Box 864<br />
+	Louisa, VA 23093<br />
+	</div>
+	<div class="person">
+	Cindy Swann<br />
+	Secretary<br />
+	Membership, Bylaws Committees<br />
+	Mountain Road District<br />
+	Cell: 804-556-4698<br />
+	Fax: 804-556-4598<br />
+	1880 West Chapel Dr.<br />
+	Bumpass, VA 23024<br />
+	</div>
+	<div class="person">
+	Kathy Swarthout RN, BSN<br />
+	Activities and Events, Bylaws Committees<br />
+	Cuckoo District<br />
+	<a href="mailto:wkbs23117@gmail.com">wkbs23117@gmail.com</a><br />
+	Phone: 540-894-9991<br />
+	4849 Indian Creek Rd<br />
+	Mineral, VA 23117-3329<br />
+	</div>
+	<div class="person">
+	Jonathan Tustin <br />
+	President Pro Temp<br />
+	Bylaw, Budget Committees<br />
+	Louisa District<br />
+	<a href="mailto:Carjon301@hotmail.com">Carjon301@hotmail.com</a> <br />
+	Cell: 540-223-6033<br />
+	Fax: 757-566-4013<br />
+	2185 N Lakeshore Drive<br />
+	Louisa, VA 23093<br />
+	</div>
+	<div class="person">
+	Helena Unhock<br />
+	JABA Representative<br />
+    Queen Center<br />
+	<a href="mailto:hunhoch@jabacares.org">hunhoch@jabacares.org</a><br />
+	Phone: 540-967-4420<br />
+	</div>
+</div>
+</section>
+<div>
 <menu>
 	<div>
 		<button><a href="index.html">HOME</a></button>
@@ -151,7 +276,6 @@ var toggleFontSize = function() {
 		<button><a href="https://www.louisacounty.com/">LOUISA COUNTY</a></button>
 	</div>
 </menu>
-</div>
 <hr />
 <div>
 	<footer>
