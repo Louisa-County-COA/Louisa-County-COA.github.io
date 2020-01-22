@@ -1,4 +1,4 @@
-/*Last updated 1-20-2020*/
+/*Last updated 1-22-2020*/
 
 * {
 	box-sizing:border-box;
@@ -56,6 +56,10 @@ button {
   bottom: 16px;
   width: 90%;
 }
+.contacts {
+    column-count: 3;
+}
+
 .date
 {
 	text-align: left;
@@ -140,7 +144,7 @@ h1 {
 
 .heading {
 	border: 5px groove gray;
-	background: linear-gradient(#009900 15%, #003300 100%);
+	background: linear-gradient(#009900 15%, #006600 100%); /*linear-gradient(#009900 15%, #003300 100%);*/
     min-height: 8.5em;
 }
 
@@ -167,7 +171,7 @@ li {
 }
 menu {
 	clear: both;
-	background: radial-gradient(#ffcc33 25%, #e6ac00 85%);
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
 	padding: 0px !important;
 }
@@ -182,7 +186,11 @@ menu {
   right: 0;
   border-radius: 0 5px 5px 0;
 }
-
+.person
+{
+	overflow: hidden;
+    break-inside: avoid-column;	
+}
 .prev {
   left: 0;
   border-radius: 5px 0 0 5px;
@@ -225,7 +233,7 @@ section {
 }
 /* Carousel */
 .carousel {
-  max-width: 750px;
+  max-width: 1000px;
   position: relative;
   margin: auto;
 }
