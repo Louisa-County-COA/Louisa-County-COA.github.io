@@ -64,7 +64,9 @@ button {
 .contacts {
     column-count: 3;
 }
-
+.content {
+	margin: 5px auto;
+}
 .date
 {
 	text-align: left;
