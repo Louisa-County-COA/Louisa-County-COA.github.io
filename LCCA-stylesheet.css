@@ -1,5 +1,4 @@
-/*Last updated 1-22-2020*/
-
+/*Last updated 1-27-2020*/
 * {
 	box-sizing:border-box;
 }
@@ -25,7 +24,7 @@ a.title:hover {
 }
 
 body {
-	background-image: url("old-hands1.png");
+	background-image: url("old-man-on-bench.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: top left;
