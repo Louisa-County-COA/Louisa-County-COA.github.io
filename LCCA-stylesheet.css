@@ -20,7 +20,7 @@ h1 {
 	display: block;
 }
 input {
-	font-size: medium;
+	font-size: large;
     border-radius: 15px;
 	border: 2px outset darkgray;
 	padding: .35em;
@@ -48,7 +48,7 @@ span {
     width: 90%;
 }
 input {
-	font-size: medium;
+	font-size: large;
     border-radius: 15px;
 	border: 2px outset darkgray;
 	padding: .35em;
@@ -153,6 +153,7 @@ button {
 }
 .content {
 	margin: 5px auto;
+	font-size: large;
 }
 
 div {
