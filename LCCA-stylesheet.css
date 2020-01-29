@@ -1,4 +1,4 @@
-/*Last updated 1-28-2020*/
+/*Last updated 1-29-2020*/
 
 @media (max-width: 30em)
 {
@@ -263,6 +263,9 @@ menu {
 	display: flex;
 	margin: auto;
 }
+.minutes {
+	font-size: large;
+}
 .minutes a{
 	color: white;
 }
@@ -277,7 +280,8 @@ menu {
 .person
 {
 	overflow: hidden;
-    break-inside: avoid-column;	
+    break-inside: avoid-column;
+	font-size: large;
 }
 .prev {
   left: 0;
