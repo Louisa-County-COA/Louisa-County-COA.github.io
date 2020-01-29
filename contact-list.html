@@ -7,7 +7,7 @@
 	<meta name="description" content="Homepage for the Louisa County Commission on Aging.">
 	<meta name="author" content="Brendan Ferreri-Hanberry" />
 	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-	<meta name="dcterms.modified" content="2020-1-27" />
+	<meta name="dcterms.modified" content="2020-1-29" />
 	<meta name="viewport" content="width=device-width" initial-scale="1" >
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
@@ -21,55 +21,6 @@
 </head>
 <body>
 <div id="container">
-<script>
-var toggleFontSize = function() {
-    button = $("button").css("font-size");
-	console.log(button);
-	if (button == "16px") {
-		$("button").css("font-size", "small");
-		$("li").css("font-size", "small");
-		$("section").css("font-size", "medium");
-		$("footer").css("font-size", "medium");
-		$("input").css("font-size", "medium");
-	}
-	else {
-		$("button").css("font-size", "medium");
-		$("li").css("font-size", "medium");
-		$("section").css("font-size", "large");
-		$("footer").css("font-size", "large");
-		$("input").css("font-size", "large");
-	}
-};
-// Slideshow
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
-</script>
 
 <div class="heading">
 	<h1>
@@ -96,7 +47,7 @@ function showSlides(n) {
 	<div class="dropdown">
 	    <button>ABOUT</button>
 		<ul class="dropdown-content">
-			<li><a href="">BYLAWS</a></li>
+			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
 			<li><a href="index.html#mission">MISSION</a></li>
 			<li><a href="minutes.html">MINUTES</a></li>
 		</ul>
@@ -145,9 +96,9 @@ function showSlides(n) {
 	</div>
 </menu>
 <div>
-<section>
+<section class="contacts">
 <h2>Contacts</h2>
-<div class="contacts">
+<div>
 	<div class="person">
 	Ginger Dillard<br />
 	Director of Advocacy Services <br />
@@ -307,10 +258,35 @@ function showSlides(n) {
 <hr />
 <div>
 	<footer>
-	<a href="index.html">Home</a> | Mailing Address Goes Here | <a href="mailto:LCCOAinfo@gmail.com">Email</a> 
+	<a href="index.html">Home</a> | PO Box 1904, Louisa, VA 23093 
+	| <a href="mailto:LCCOAinfo@gmail.com">Email</a> 
 	| &copy; 2020 Louisa County Commission on Aging. All rights reserved.
 	</footer>
 </div>
 </div>
+<script>
+var toggleFontSize = function() {
+    button = $("button").css("font-size");
+	console.log(button);
+	if (button == "16px") {
+		$("button").css("font-size", "small");
+		$("li").css("font-size", "small");
+		$("minutes").css("font-size", "medium");
+		$('.person').attr('style','font-size:medium !important');
+		$("section").css("font-size", "medium");
+		$("footer").css("font-size", "medium");
+		$("input").css("font-size", "medium");
+	}
+	else {
+		$("button").css("font-size", "medium");
+		$("li").css("font-size", "medium");
+		$("minutes").css("font-size", "large");
+		$('.person').attr('style','font-size:large !important');
+		$("section").css("font-size", "large");
+		$("footer").css("font-size", "large");
+		$("input").css("font-size", "large");
+	}
+};
+</script>
 </body>
 </html>

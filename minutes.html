@@ -7,7 +7,7 @@
 	<meta name="description" content="Homepage for the Louisa County Commission on Aging.">
 	<meta name="author" content="Brendan Ferreri-Hanberry" />
 	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-	<meta name="dcterms.modified" content="2020-1-27" />
+	<meta name="dcterms.modified" content="2020-1-29" />
 	<meta name="viewport" content="width=device-width" initial-scale="1" >
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
@@ -28,6 +28,7 @@ var toggleFontSize = function() {
 	if (button == "16px") {
 		$("button").css("font-size", "small");
 		$("li").css("font-size", "small");
+		$("minutes").css("font-size", "medium");
 		$("section").css("font-size", "medium");
 		$("footer").css("font-size", "medium");
 		$("input").css("font-size", "medium");
@@ -35,6 +36,7 @@ var toggleFontSize = function() {
 	else {
 		$("button").css("font-size", "medium");
 		$("li").css("font-size", "medium");
+		$("minutes").css("font-size", "large");
 		$("section").css("font-size", "large");
 		$("footer").css("font-size", "large");
 		$("input").css("font-size", "large");
@@ -67,7 +69,7 @@ var toggleFontSize = function() {
 	<div class="dropdown">
 	    <button>ABOUT</button>
 		<ul class="dropdown-content">
-			<li><a href="">BYLAWS</a></li>
+			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
 			<li><a href="index.html#mission">MISSION</a></li>
 			<li><a href="">MINUTES</a></li>
 		</ul>
@@ -180,7 +182,8 @@ var toggleFontSize = function() {
 <hr />
 <div>
 	<footer>
-	<a href="index.html">Home</a> | Mailing Address Goes Here | <a href="mailto:LCCOAinfo@gmail.com">Email</a> 
+	<a href="index.html">Home</a> | PO Box 1904, Louisa, VA 23093 
+	| <a href="mailto:LCCOAinfo@gmail.com">Email</a> 
 	| &copy; 2020 Louisa County Commission on Aging. All rights reserved.
 	</footer>
 </div>
