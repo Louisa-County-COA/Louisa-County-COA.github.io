@@ -13,6 +13,9 @@
     bottom: 16px;
     width: 90%;
 }
+.contacts {
+	column-count: 1;
+}
 h1 {
 	padding: 0.625em;
 	margin: 0em;
@@ -47,6 +50,9 @@ span {
     bottom: 16px;
     width: 90%;
 }
+.contacts {
+	column-count: 2;
+}
 input {
 	font-size: large;
     border-radius: 15px;
@@ -78,6 +84,9 @@ h1 {
 
 @media (min-width: 45em)
 {
+.contacts {
+	column-count: 3;
+}
 h1 {
 	font-size: 42px;
 	display: block;
@@ -147,10 +156,6 @@ button {
 	text-transform: uppercase;
 }
 
-
-.contacts {
-    column-count: 3;
-}
 .content {
 	margin: 5px auto;
 	font-size: large;
@@ -226,6 +231,7 @@ form {
 	font-size: medium;
     border-radius: 15px;
 	display: flex;
+	margin: 0 -1em 0 0;
 }
 
 

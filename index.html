@@ -244,7 +244,11 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-} 
+}
+
+// Cycle through slides every 4 seconds
+window.setInterval(plusSlides, 4000, 1);
+
 </script>
 </body>
 </html>
