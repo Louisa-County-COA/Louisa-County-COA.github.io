@@ -1,7 +1,101 @@
-/*Last updated 1-22-2020*/
+/*Last updated 1-28-2020*/
 
+@media (max-width: 30em)
+{
 * {
-	box-sizing:border-box;
+	box-sizing: content-box;
+}
+.caption
+{
+    font-size: 12px;
+    padding: 4px 12px;
+    position: absolute;
+    bottom: 16px;
+    width: 90%;
+}
+h1 {
+	padding: 0.625em;
+	margin: 0em;
+	font-size: 22px;
+	display: block;
+}
+input {
+	font-size: medium;
+    border-radius: 15px;
+	border: 2px outset darkgray;
+	padding: .35em;
+	width: 120px;
+}
+.small {
+	display:none;
+}
+span {
+	margin: 0;
+}
+}
+
+
+
+@media (min-width: 30em)
+{
+
+.caption 
+{
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 16px;
+    width: 90%;
+}
+input {
+	font-size: medium;
+    border-radius: 15px;
+	border: 2px outset darkgray;
+	padding: .35em;
+	width: 180px;
+}
+.small {
+	max-height:2em;
+	max-width:2em;
+	display:inline;
+	margin: -0.3em 0.5em 0em -0.5em;
+}
+
+span {
+	margin: -0.5em 0 0 0;
+}
+}
+
+@media (min-width: 30em) and (max-width: 45em)
+{
+h1 {
+	font-size: 32px;
+	display: block;
+	padding: 0.625em;
+	margin: 0em;
+}
+}
+
+@media (min-width: 45em)
+{
+h1 {
+	font-size: 42px;
+	display: block;
+	padding: 0.625em;
+	margin: 0em;
+}
+#search-and-size {
+    margin: -4em 0 0 0;	
+}
+* {
+    box-sizing: border-box;
+}
+}
+
+.date {
+	text-align: left;
+	font-size: 1.2em;
+	color: orange;
 }
 
 a{
@@ -25,11 +119,11 @@ a.title:hover {
 }
 
 body {
-	background-image: url("old-hands1.png");
+	background-image: url("old-man-on-bench.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: top left;
-	background-size: cover;
+	background-size:  cover;
     padding: 0em 1.25em 1.25em 1.25em;
 	width: 80%;
 	margin: 3em auto;
@@ -53,26 +147,14 @@ button {
 	text-transform: uppercase;
 }
 
-.caption {
 
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 16px;
-  width: 90%;
-}
 .contacts {
     column-count: 3;
 }
 .content {
 	margin: 5px auto;
 }
-.date
-{
-	text-align: left;
-	font-size: 1.2em;
-	color: orange;
-}
+
 div {
 	background-color: transparent;
     padding: 0.625em;
@@ -98,6 +180,7 @@ div {
 	display: none;
 	color: blue;
 	position: absolute;
+	z-index: 100;
 	background: radial-gradient(#ffcc33 25%, #e6ac00 85%);
 	list-style: none;
 	padding: .25em;
@@ -143,11 +226,7 @@ form {
     border-radius: 15px;
 	display: flex;
 }
-h1 {
-	padding: 0.625em;
-	margin: 0em;
-	font-size: 42px;
-}
+
 
 .heading {
 	border: 5px groove gray;
@@ -163,12 +242,7 @@ img {
 	border-radius: 5px;
 }
 
-input {
-	font-size: medium;
-    border-radius: 15px;
-	border: 2px outset darkgray;
-	padding: .35em;
-}
+
 .left {
 	float:left;
 }
@@ -229,9 +303,7 @@ menu {
 .right {
 	float:right;
 }
-#search-and-size {
-	margin: -4em 0 0 0;
-}
+
 .search {
 	height: 28px;
 	width: 36px; 
@@ -247,20 +319,11 @@ section {
 
 /* Carousel */
 .carousel {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
   margin: auto;
 }
 
-.small {
-	height:2em;
-	width:2em;
-	display:inline;
-	margin: -0.3em 0.5em 0em -0.5em;
-}
-span {
-	margin: -0.5em 0 0 0;
-}
 .submit {
     margin: 0 0 -4px 0;
 }
