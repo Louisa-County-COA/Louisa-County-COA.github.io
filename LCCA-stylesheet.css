@@ -5,6 +5,9 @@
 * {
 	box-sizing: content-box;
 }
+body {
+	width: 80%;
+}
 .caption
 {
     font-size: 12px;
@@ -41,7 +44,10 @@ span {
 
 @media (min-width: 30em)
 {
-
+body
+{
+	width: 80%;
+}
 .caption 
 {
     font-size: 15px;
@@ -84,6 +90,9 @@ h1 {
 
 @media (min-width: 45em)
 {
+body {
+    width: 70%;		
+}
 .contacts {
 	column-count: 3;
 }
@@ -101,11 +110,7 @@ h1 {
 }
 }
 
-.date {
-	text-align: left;
-	font-size: 1.2em;
-	color: orange;
-}
+
 
 a{
 	text-decoration: none;
@@ -126,15 +131,18 @@ a.title:hover {
 .active, .dot:hover {
   background: radial-gradient(#009900 15%, #003300 90%)  !important; /*alternatively #717171*/
 }
-
+.banner {
+	max-width: 100%;
+	margin: auto;
+	display: flex;
+}
 body {
-	background-image: url("old-man-on-bench.jpg");
+	background-image: url("old-couple-walking.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-position: top left;
+	background-position: center;
 	background-size:  cover;
     padding: 0em 1.25em 1.25em 1.25em;
-	width: 80%;
 	margin: 3em auto;
 	padding: 0em;
 	border: 5px groove gray;
@@ -159,6 +167,12 @@ button {
 .content {
 	margin: 5px auto;
 	font-size: large;
+}
+
+.date {
+	text-align: left;
+	font-size: 1.2em;
+	color: orange;
 }
 
 div {
@@ -262,6 +276,7 @@ menu {
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
 	padding: 0px !important;
+	margin: 0;
 }
 .menu-img {
 	max-width: 108px;
