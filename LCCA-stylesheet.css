@@ -18,6 +18,8 @@ body {
 }
 .contacts {
 	column-count: 1;
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
+	color: black;
 }
 h1 {
 	padding: 0.625em;
@@ -56,9 +58,7 @@ body
     bottom: 16px;
     width: 90%;
 }
-.contacts {
-	column-count: 2;
-}
+
 input {
 	font-size: large;
     border-radius: 15px;
@@ -86,6 +86,11 @@ h1 {
 	padding: 0.625em;
 	margin: 0em;
 }
+.contacts {
+	column-count: 2;
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
+	color: black;
+}
 }
 
 @media (min-width: 45em)
@@ -95,6 +100,8 @@ body {
 }
 .contacts {
 	column-count: 3;
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
+	color: black;
 }
 h1 {
 	font-size: 42px;
@@ -118,6 +125,11 @@ a{
 }
 a:hover {
 	text-decoration: underline;
+}
+
+.contacts h2 {
+	column-span: all;
+	margin: 20px;
 }
 
 h2 a {
@@ -167,6 +179,8 @@ button {
 .content {
 	margin: 5px auto;
 	font-size: large;
+	color: black;
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 }
 
 .date {
@@ -301,7 +315,7 @@ menu {
 .person
 {
 	overflow: hidden;
-    break-inside: avoid-column;
+    break-inside: avoid;
 	font-size: large;
 }
 .prev {
