@@ -34,6 +34,21 @@ input {
 	padding: .35em;
 	width: 120px;
 }
+menu {
+	clear: both;
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
+	border: 5px groove gray;
+	margin: 0 auto;
+}
+.top-menu {
+	max-width: 100%;
+	padding: 0px !important;
+	margin: 10px auto 0 auto;
+}
+.bottom-menu {
+	max-width: 100%;
+	padding: 0px !important;
+}
 .small {
 	display:none;
 }
@@ -41,8 +56,6 @@ span {
 	margin: 0;
 }
 }
-
-
 
 @media (min-width: 30em)
 {
@@ -66,6 +79,7 @@ input {
 	padding: .35em;
 	width: 180px;
 }
+
 .small {
 	max-height:2em;
 	max-width:2em;
@@ -78,7 +92,7 @@ span {
 }
 }
 
-@media (min-width: 30em) and (max-width: 45em)
+@media (min-width: 30em) and (max-width: 55em)
 {
 h1 {
 	font-size: 32px;
@@ -91,9 +105,24 @@ h1 {
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	color: black;
 }
+menu {
+	clear: both;
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
+	border: 5px groove gray;
+	margin: 0 auto;
+}
+.top-menu {
+	max-width: 100%;
+	padding: 0px !important;
+	margin: 10px auto 0 auto;
+}
+.bottom-menu {
+	padding: 0px !important;
+	max-width: 100%;
+}
 }
 
-@media (min-width: 45em)
+@media (min-width: 55em)
 {
 body {
     width: 70%;		
@@ -109,6 +138,22 @@ h1 {
 	padding: 0.625em;
 	margin: 0em;
 }
+menu {
+	clear: both;
+	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
+	border: 5px groove gray;
+	margin: 0 auto;
+}
+.bottom-menu {
+	margin: 0 auto;
+	padding: 0px !important;
+	max-width: 70%;
+}
+.top-menu {
+	max-width: 60%;
+	margin: 10px auto 0 auto;
+}
+
 #search-and-size {
     margin: -4em 0 0 0;	
 }
@@ -145,7 +190,7 @@ a.title:hover {
 }
 .banner {
 	max-width: 100%;
-	margin: auto;
+	margin: auto auto -10px auto;
 	display: flex;
 }
 body {
@@ -158,11 +203,6 @@ body {
 	margin: 3em auto;
 	padding: 0em;
 	border: 5px groove gray;
-}
-.bottom-menu {
-	display: flex;
-	margin: 0;
-	padding: 10px 0px 0px 0px;
 }
 button {
 	color: black;
@@ -285,13 +325,7 @@ li {
 	margin: .25em;
 	text-transform: uppercase;
 }
-menu {
-	clear: both;
-	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
-	border: 5px groove gray;
-	padding: 0px !important;
-	margin: 0;
-}
+
 .menu-img {
 	max-width: 108px;
     max-height: 108px;
