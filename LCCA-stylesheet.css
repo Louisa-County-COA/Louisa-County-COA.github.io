@@ -315,7 +315,7 @@ menu {
 .person
 {
 	overflow: hidden;
-    break-inside: avoid-column;
+    break-inside: avoid;
 	font-size: large;
 }
 .prev {
