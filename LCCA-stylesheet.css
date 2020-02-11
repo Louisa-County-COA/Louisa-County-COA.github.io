@@ -127,6 +127,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+.contacts h2 {
+	column-span: all;
+	margin: 20px;
+}
+
 h2 a {
 	color: white;
 }
