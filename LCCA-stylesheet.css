@@ -1,4 +1,4 @@
-/*Last updated 1-29-2020*/
+/*Last updated 2-12-2020*/
 
 @media (max-width: 30em)
 {
@@ -23,7 +23,7 @@ body {
 }
 h1 {
 	padding: 0.625em;
-	margin: 0em;
+	margin: 0;
 	font-size: 22px;
 	display: block;
 }
@@ -42,12 +42,12 @@ menu {
 }
 .top-menu {
 	max-width: 100%;
-	padding: 0px !important;
+	padding: 0 !important;
 	margin: 10px auto 0 auto;
 }
 .bottom-menu {
 	max-width: 100%;
-	padding: 0px !important;
+	padding: 0 !important;
 }
 .small {
 	display:none;
@@ -83,8 +83,7 @@ input {
 .small {
 	max-height:2em;
 	max-width:2em;
-	display:inline;
-	margin: -0.3em 0.5em 0em -0.5em;
+	margin: -0.3em 0.5em 0 -0.5em;
 }
 
 span {
@@ -98,7 +97,7 @@ h1 {
 	font-size: 32px;
 	display: block;
 	padding: 0.625em;
-	margin: 0em;
+	margin: 0;
 }
 .contacts {
 	column-count: 2;
@@ -113,11 +112,11 @@ menu {
 }
 .top-menu {
 	max-width: 100%;
-	padding: 0px !important;
+	padding: 0 !important;
 	margin: 10px auto 0 auto;
 }
 .bottom-menu {
-	padding: 0px !important;
+	padding: 0 !important;
 	max-width: 100%;
 }
 }
@@ -136,7 +135,7 @@ h1 {
 	font-size: 42px;
 	display: block;
 	padding: 0.625em;
-	margin: 0em;
+	margin: 0;
 }
 menu {
 	clear: both;
@@ -199,9 +198,9 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:  cover;
-    padding: 0em 1.25em 1.25em 1.25em;
+    padding: 0 1.25em 1.25em 1.25em;
 	margin: 3em auto;
-	padding: 0em;
+	padding: 0;
 	border: 5px groove gray;
 }
 button {
@@ -209,7 +208,6 @@ button {
 	margin: 5px;
 	padding: 5px;
 	border: none;
-	display: inline;
 	font-family: Times New Roman;
 	font-size: 1em;
 	background-color: transparent;
