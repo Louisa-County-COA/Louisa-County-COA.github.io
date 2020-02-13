@@ -257,7 +257,6 @@ div {
 	padding: .25em;
 	border: 2px groove darkgray;
 	border-radius: 1em;
-	margin: 0;
 }
 .dropdown:hover .dropdown-content {
 	display:block;
