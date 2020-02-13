@@ -319,6 +319,7 @@ img {
 	float:left;
 }
 li {
+	list-style: none;
 	margin: .25em;
 	text-transform: uppercase;
 }
