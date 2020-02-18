@@ -42,12 +42,12 @@ menu {
 }
 .top-menu {
 	max-width: 100%;
-	padding: 0 !important;
+	padding: 0 5px !important;
 	margin: 10px auto 0 auto;
 }
 .bottom-menu {
 	max-width: 100%;
-	padding: 0 !important;
+	padding: 0 5px !important;
 }
 .small {
 	display:none;
@@ -112,11 +112,11 @@ menu {
 }
 .top-menu {
 	max-width: 100%;
-	padding: 0 !important;
+	padding: 0 5px !important;
 	margin: 10px auto 0 auto;
 }
 .bottom-menu {
-	padding: 0 !important;
+	padding: 0 5px !important;
 	max-width: 100%;
 }
 }
@@ -145,12 +145,13 @@ menu {
 }
 .bottom-menu {
 	margin: 0 auto;
-	padding: 0 !important;
+	padding: 0 auto !important;
 	max-width: 70%;
 }
 .top-menu {
 	max-width: 60%;
 	margin: 10px auto 0 auto;
+	padding: 0 auto !important;
 }
 
 .size {
