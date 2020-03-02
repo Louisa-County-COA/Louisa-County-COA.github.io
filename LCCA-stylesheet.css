@@ -27,6 +27,7 @@ h1 {
 	font-size: 22px;
 	display: block;
 }
+
 input {
 	font-size: large;
     border-radius: 15px;
@@ -99,6 +100,7 @@ h1 {
 	padding: 0.625em;
 	margin: 0;
 }
+
 .contacts {
 	column-count: 2;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -137,6 +139,7 @@ h1 {
 	padding: 0.625em;
 	margin: 0;
 }
+
 menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -146,10 +149,10 @@ menu {
 .bottom-menu {
 	margin: 0 auto;
 	padding: 0 auto !important;
-	max-width: 70%;
+	max-width: 100%;
 }
 .top-menu {
-	max-width: 60%;
+	max-width: 80%;
 	margin: 10px auto 0 auto;
 	padding: 0 auto !important;
 }
@@ -162,9 +165,17 @@ menu {
 }
 }
 
+@media (min-width: 95em)
+{
+.top-menu {
+	max-width: 60%;	
+}
+.bottom-menu{
+    max-width: 80%;		
+}
+}
 
-
-a{
+a {
 	text-decoration: none;
 	color: black;
 }
