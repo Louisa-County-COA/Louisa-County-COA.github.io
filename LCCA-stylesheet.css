@@ -1,4 +1,4 @@
-/*Last updated 2-12-2020*/
+/*Last updated 3-2-2020*/
 
 @media (max-width: 30em)
 {
@@ -27,7 +27,9 @@ h1 {
 	font-size: 22px;
 	display: block;
 }
-
+h2 {
+	font-size: 1.5em;
+}
 input {
 	font-size: large;
     border-radius: 15px;
@@ -100,7 +102,9 @@ h1 {
 	padding: 0.625em;
 	margin: 0;
 }
-
+h2 {
+	font-size: 1.5em;
+}
 .contacts {
 	column-count: 2;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -139,7 +143,9 @@ h1 {
 	padding: 0.625em;
 	margin: 0;
 }
-
+h2 {
+	font-size: 2em;
+}
 menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -186,6 +192,11 @@ a:hover {
 .contacts h2 {
 	column-span: all;
 	margin: 20px;
+	font-size: 1.5em;
+}
+
+.caption h2 {
+	font-size: 1.5em;
 }
 
 h2 a {
