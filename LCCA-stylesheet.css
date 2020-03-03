@@ -1,4 +1,4 @@
-/*Last updated 2-12-2020*/
+/*Last updated 3-2-2020*/
 
 @media (max-width: 30em)
 {
@@ -26,6 +26,9 @@ h1 {
 	margin: 0;
 	font-size: 22px;
 	display: block;
+}
+h2 {
+	font-size: 1.5em;
 }
 input {
 	font-size: large;
@@ -99,6 +102,9 @@ h1 {
 	padding: 0.625em;
 	margin: 0;
 }
+h2 {
+	font-size: 1.5em;
+}
 .contacts {
 	column-count: 2;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -137,6 +143,9 @@ h1 {
 	padding: 0.625em;
 	margin: 0;
 }
+h2 {
+	font-size: 2em;
+}
 menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -146,10 +155,10 @@ menu {
 .bottom-menu {
 	margin: 0 auto;
 	padding: 0 auto !important;
-	max-width: 70%;
+	max-width: 100%;
 }
 .top-menu {
-	max-width: 60%;
+	max-width: 80%;
 	margin: 10px auto 0 auto;
 	padding: 0 auto !important;
 }
@@ -162,9 +171,17 @@ menu {
 }
 }
 
+@media (min-width: 95em)
+{
+.top-menu {
+	max-width: 60%;	
+}
+.bottom-menu{
+    max-width: 80%;		
+}
+}
 
-
-a{
+a {
 	text-decoration: none;
 	color: black;
 }
@@ -175,6 +192,11 @@ a:hover {
 .contacts h2 {
 	column-span: all;
 	margin: 20px;
+	font-size: 1.5em;
+}
+
+.caption h2 {
+	font-size: 1.5em;
 }
 
 h2 a {
