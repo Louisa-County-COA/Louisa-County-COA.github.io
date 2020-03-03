@@ -21,6 +21,11 @@ body {
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	color: black;
 }
+.contacts h2 {
+	column-span: all;
+	margin: 10px;
+	font-size: 1.5em;
+}
 h1 {
 	padding: 0.625em;
 	margin: 0;
@@ -110,6 +115,11 @@ h2 {
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	color: black;
 }
+.contacts h2 {
+	column-span: all;
+	margin: 10px;
+	font-size: 1.5em;
+}
 menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -144,6 +154,11 @@ h1 {
 	margin: 0;
 }
 h2 {
+	font-size: 2em;
+}
+.contacts h2 {
+	column-span: all;
+	margin: 10px;
 	font-size: 2em;
 }
 menu {
@@ -187,16 +202,6 @@ a {
 }
 a:hover {
 	text-decoration: underline;
-}
-
-.contacts h2 {
-	column-span: all;
-	margin: 20px;
-	font-size: 1.5em;
-}
-
-.caption h2 {
-	font-size: 1.5em;
 }
 
 h2 a {
@@ -410,7 +415,7 @@ section {
 	clear: both;
 	background-color: transparent;
 	border: 5px groove gray;
-	padding: 0.625em;
+	padding: 0.625em 1em;
 	color: white;
 }
 
