@@ -1,4 +1,6 @@
-/*Last updated 3-2-2020*/
+/*Last updated 3-6-2020*/
+
+/*Begin media queries based on screen width*/
 
 @media (max-width: 30em)
 {
@@ -196,6 +198,8 @@ menu {
 }
 }
 
+/*End media queries based on screen width*/
+
 a {
 	text-decoration: none;
 	color: black;
@@ -204,6 +208,10 @@ a:hover {
 	text-decoration: underline;
 }
 
+abbr {
+	text-decoration: none !important;
+	font-variant: none;
+}
 h2 a {
 	color: white;
 	font-family: "Times New Roman";
