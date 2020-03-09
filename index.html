@@ -7,7 +7,7 @@
 	<meta name="description" content="Homepage for the Louisa County Commission on Aging.">
 	<meta name="author" content="Brendan Ferreri-Hanberry" />
 	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-	<meta name="dcterms.modified" content="2020-3-6" />
+	<meta name="dcterms.modified" content="2020-3-9" />
 	<meta name="viewport" content="width=device-width initial-scale=1" >
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
@@ -42,7 +42,14 @@
 		<ul class="dropdown-content">
 			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
 			<li><a href="#mission">MISSION</a></li>
-			<li><a href="minutes.html">MINUTES</a></li>
+			<li class="dropdown-submenu">
+			<a href="#" id="minutes-button">MINUTES</a>
+			<ul class="dropdown-content" id="minutes-list">
+			    <li><a href="2018-minutes.html">2018</a></li>
+				<li><a href="2019-minutes.html">2019</a></li>
+				<li><a href="2020-minutes.html">2020</a></li>
+			</ul>
+			</li>
 		</ul>
 	</li>
 	<li class="dropdown">
@@ -195,6 +202,7 @@
 </div>
 </div>
 <script>
+// Toggle font size
 var toggleFontSize = function() {
     button = $("button").css("font-size");
 	console.log(button);
@@ -213,6 +221,17 @@ var toggleFontSize = function() {
 		$("input").css("font-size", "large");
 	}
 };
+
+// Dropdown menu for minutes
+$("#minutes-list").hide();
+
+$(document).ready(function(){
+  $("#minutes-button").on("click", function(e){
+    $(this).next('ul').toggle();
+    e.preventDefault();
+  });
+});
+
 // Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);

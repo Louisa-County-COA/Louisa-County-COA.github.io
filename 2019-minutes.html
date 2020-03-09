@@ -7,7 +7,7 @@
 	<meta name="description" content="Homepage for the Louisa County Commission on Aging.">
 	<meta name="author" content="Brendan Ferreri-Hanberry" />
 	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-	<meta name="dcterms.modified" content="2020-3-6" />
+	<meta name="dcterms.modified" content="2020-3-9" />
 	<meta name="viewport" content="width=device-width initial-scale=1" >
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
@@ -20,13 +20,13 @@
 <body>
 <div id="container">
 <script>
+// Toggle font size
 var toggleFontSize = function() {
     button = $("button").css("font-size");
 	console.log(button);
 	if (button == "16px") {
 		$("button").css("font-size", "small");
 		$("li").css("font-size", "small");
-		$("minutes").css("font-size", "medium");
 		$("section").css("font-size", "medium");
 		$("footer").css("font-size", "medium");
 		$("input").css("font-size", "medium");
@@ -34,12 +34,22 @@ var toggleFontSize = function() {
 	else {
 		$("button").css("font-size", "medium");
 		$("li").css("font-size", "medium");
-		$("minutes").css("font-size", "large");
 		$("section").css("font-size", "large");
 		$("footer").css("font-size", "large");
 		$("input").css("font-size", "large");
 	}
 };
+
+// Dropdown menu for minutes
+$("#minutes-list").hide();
+
+$(document).ready(function(){
+  $("#minutes-button").on("click", function(e){
+    $(this).next('ul').toggle();
+    e.preventDefault();
+  });
+});
+
 </script>
 
 <div class="heading">
@@ -56,12 +66,19 @@ var toggleFontSize = function() {
 	</div>
 </div>
 <menu class="top-menu">
-	<li class="dropdown">
+		<li class="dropdown">
 	    <button>ABOUT</button>
 		<ul class="dropdown-content">
 			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
 			<li><a href="index.html#mission">MISSION</a></li>
-			<li><a href="">MINUTES</a></li>
+			<li class="dropdown-submenu">
+			<a href="#" id="minutes-button">MINUTES</a>
+			<ul class="dropdown-content" id="minutes-list">
+			    <li><a href="2018-minutes.html">2018</a></li>
+				<li><a href="2019-minutes.html">2019</a></li>
+				<li><a href="2020-minutes.html">2020</a></li>
+			</ul>
+			</li>
 		</ul>
 	</li>
 	<li class="dropdown">
@@ -99,13 +116,7 @@ var toggleFontSize = function() {
 
 <div>
 	<section class="minutes">
-		<h2>Minutes</h2>
-		<div><a href="minutes/Feb-6-18.pdf" download>February 6, 2018</a></div>
-		<div><a href="minutes/Mar-7-18.pdf" download>March 7, 2018</a></div>
-		<div><a href="minutes/Apr-11-18.pdf" download>April 11, 2018</a></div>
-		<div><a href="minutes/May-2-18.pdf" download>May 2, 2018</a></div>
-		<div><a href="minutes/Aug-1-18.pdf" download>August 1, 2018</a></div>
-        <div><a href="minutes/Oct-2-18.pdf" download>Oct 2, 2018</a></div>
+		<h2>2019 Minutes</h2>
 		<div><a href="minutes/3-16-19.docx" download>March 16, 2019</a></div>
 		<div><a href="minutes/4-1-19.docx" download>April 1, 2019</a></div>
 		<div><a href="minutes/5-1-19.docx" download>May 1, 2019</a></div>
@@ -114,8 +125,6 @@ var toggleFontSize = function() {
 		<div><a href="minutes/10-2-19.docx" download>October 2, 2019</a></div>
 		<div><a href="minutes/11-6-19.docx" download>November 6, 2019</a></div>
 		<div><a href="minutes/12-4-19.docx" download>December 4, 2019</a></div>
-		<div><a href="minutes/1-7-20.docx" download>January 7, 2020</a></div>
-		<div><a href="minutes/2-5-20.docx" download>February 5, 2020</a></div>
 	</section>
 </div>
 <menu class="bottom-menu">
