@@ -1,4 +1,4 @@
-/*Last updated 3-6-2020*/
+/*Last updated 3-9-2020*/
 
 /*Begin media queries based on screen width*/
 
@@ -299,6 +299,15 @@ div {
 .dropdown:hover .dropdown-content {
 	display:block;
 }
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-content {
+  top: 0;
+  left: 112%;
+  margin-top: -1px;
+}
 
 .fade {
   -webkit-animation-name: fade;
@@ -357,6 +366,7 @@ img {
 	float:left;
 }
 li {
+	color: black;
 	list-style: none;
 	margin: .25em;
 	text-transform: uppercase;

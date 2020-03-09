@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>
+	Louisa County Commission on Aging
+	</title>
+	<meta name="description" content="Homepage for the Louisa County Commission on Aging.">
+	<meta name="author" content="Brendan Ferreri-Hanberry" />
+	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+	<meta name="dcterms.modified" content="2020-3-9" />
+	<meta name="viewport" content="width=device-width initial-scale=1" >
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="container">
+<script>
+// Toggle font size
+var toggleFontSize = function() {
+    button = $("button").css("font-size");
+	console.log(button);
+	if (button == "16px") {
+		$("button").css("font-size", "small");
+		$("li").css("font-size", "small");
+		$("section").css("font-size", "medium");
+		$("footer").css("font-size", "medium");
+		$("input").css("font-size", "medium");
+	}
+	else {
+		$("button").css("font-size", "medium");
+		$("li").css("font-size", "medium");
+		$("section").css("font-size", "large");
+		$("footer").css("font-size", "large");
+		$("input").css("font-size", "large");
+	}
+};
+
+// Dropdown menu for minutes
+$("#minutes-list").hide();
+
+$(document).ready(function(){
+  $("#minutes-button").on("click", function(e){
+    $(this).next('ul').toggle();
+    e.preventDefault();
+  });
+});
+
+</script>
+
+<div class="heading">
+	<h1>
+		<a href="index.html" class="title">
+			<img class="left small" src="Louisa-County-seal-cropped-best2b.png" alt="Louisa County Seal"/>
+			<span class="title-text">Louisa County 
+			<br />
+			Commission on Aging</span>
+		</a>
+	</h1>
+	<div class="right size">
+		<button id="toggleButton" class="toggle" onclick="toggleFontSize()">TOGGLE FONT SIZE</button>
+	</div>
+</div>
+<menu class="top-menu">
+		<li class="dropdown">
+	    <button>ABOUT</button>
+		<ul class="dropdown-content">
+			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
+			<li><a href="index.html#mission">MISSION</a></li>
+			<li class="dropdown-submenu">
+			<a href="#" id="minutes-button">MINUTES</a>
+			<ul class="dropdown-content" id="minutes-list">
+			    <li><a href="2018-minutes.html">2018</a></li>
+				<li><a href="2019-minutes.html">2019</a></li>
+				<li><a href="2020-minutes.html">2020</a></li>
+			</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<button>GET INVOLVED</button>
+		<ul class="dropdown-content">
+			<li><a href="mailto:LCCOAinfo@gmail.com?subject=joining a committee">JOIN A COMMITTEE</a></li>
+			<li><a href="mailto:LCCOAinfo@gmail.com?subject=becoming a member">BECOME A MEMBER</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<button>CONTACT US</button>
+		<ul class="dropdown-content">
+			<li><a href="mailto:LCCOAinfo@gmail.com">EMAIL</a></li>
+			<li><a href="contact-list.html">MEMBER LIST</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<button>VOLUNTEERING</button>
+		<ul class="dropdown-content">
+			<li><a href="https://www.jabacares.org/volunteer-services-landing"  target="_blank">VOLUNTEERING AT JABA</a></li>
+			<li><a href="https://www.jabacares.org/become-a-volunteer"  target="_blank">POSITIONS AVAILABLE</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<button>RESOURCES</button>
+		<ul class="dropdown-content">
+			<li><a href="https://jabacares.org" target="_blank"><abbr title="Jefferson Area Board for Aging">JABA</abbr></a></li>
+			<li><a href="https://www.benefitscheckup.org"  target="_blank">BENEFITS CHECKUP</a></li>
+			<li><a href="https://www.aarp.org" target="_blank"><abbr title="American Association of Retired Persons">AARP</abbr></a></li>
+			<li><a href="https://www.ncoa.org" target="_blank"><abbr title="National Council on Aging">NCOA</abbr></a></li>
+			<li><a href="https://acl.gov/programs" target="_blank"><abbr title="Administration for Community Living">ACL</abbr></a></li>
+		</ul>
+	</li>
+</menu>
+
+<div>
+	<section class="minutes">
+		<h2>2018 Minutes</h2>
+		<div><a href="minutes/Feb-6-18.pdf" download>February 6, 2018</a></div>
+		<div><a href="minutes/Mar-7-18.pdf" download>March 7, 2018</a></div>
+		<div><a href="minutes/Apr-11-18.pdf" download>April 11, 2018</a></div>
+		<div><a href="minutes/May-2-18.pdf" download>May 2, 2018</a></div>
+		<div><a href="minutes/Aug-1-18.pdf" download>August 1, 2018</a></div>
+        <div><a href="minutes/Oct-2-18.pdf" download>Oct 2, 2018</a></div>
+	</section>
+</div>
+<menu class="bottom-menu">
+	<li class="dropdown">
+		<a href="https://www.surveymonkey.com/r/CGJ62L9">
+		<img src="survey.png" class="menu-img" alt="Survey" />
+		<span class="bottom-menu">
+		AGE FRIENDLY COMMUNITY SURVEY
+		</span>
+		</a>
+	</li>
+	<li class="dropdown">
+		<a href="">
+		<img src="yellow-phonebook.png" class="menu-img" alt="Yellow phonebook"/>
+		<span class="bottom-menu">
+		LITTLE YELLOW BOOK
+		</span>
+		</a>
+	</li>
+	<li class="dropdown">
+		<a href="https://www.louisacounty.com/"  target="_blank">
+		<img src="Louisa-County-seal-color1.png" class="menu-img" alt="Louisa County Seal"/>
+		<span class="bottom-menu">
+		LOUISA COUNTY
+		</span>
+		</a>
+	</li>
+	<li class="dropdown">
+		<div>
+			<img src="document.png" class="menu-img" alt="Document" />
+			<span class="bottom-menu">
+			BOARD REPORTS
+			</span>
+		</div>
+		<ul class="dropdown-content">
+			<li><a href="COA Report 12-19.docx" download>2019 REPORT</a></li>
+			<li><a href="COA Report 12-18.docx" download>2018 REPORT</a></li>
+		</ul>
+	</li>
+</menu>
+<hr />
+<div>
+	<footer>
+	<a href="index.html">Home</a> | PO Box 1904, Louisa, VA 23093 
+	| <a href="mailto:LCCOAinfo@gmail.com">Email</a> 
+	| &copy; 2020 Louisa County Commission on Aging. All rights reserved.
+	</footer>
+</div>
+</div>
+</body>
+</html>
