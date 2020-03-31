@@ -1,4 +1,4 @@
-/*Last updated 3-27-2020*/
+/*Last updated 3-31-2020*/
 
 /*Begin media queries based on screen width*/
 
@@ -187,7 +187,7 @@ menu {
 }
 .bottom-menu {
 	margin: 0 auto;
-	padding: 0 auto !important;
+	padding: 0 5px !important;
 	max-width: 100%;
 }
 .top-menu {
