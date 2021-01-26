@@ -37,13 +37,7 @@ h1 {
 h2 {
 	font-size: 1.5em;
 }
-input {
-	font-size: large;
-    border-radius: 15px;
-	border: 2px outset darkgray;
-	padding: .35em;
-	width: 120px;
-}
+
 menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -80,13 +74,6 @@ body
     width: 90%;
 }
 
-input {
-	font-size: large;
-    border-radius: 15px;
-	border: 2px outset darkgray;
-	padding: .35em;
-	width: 180px;
-}
 
 span {
 	margin: -0.5em 0 0 0;
