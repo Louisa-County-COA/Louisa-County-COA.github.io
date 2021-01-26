@@ -111,10 +111,12 @@ menu {
 	max-width: 100%;
 	padding: 0 5px !important;
 	margin: 10px auto 0 auto;
+	text-align: center;
 }
 .bottom-menu {
 	padding: 0 5px !important;
 	max-width: 100%;
+	text-align: center;
 }
 }
 @media (max-width: 37em)
@@ -176,11 +178,13 @@ menu {
 	margin: 0 auto;
 	padding: 0 5px !important;
 	max-width: 100%;
+	text-align: center;
 }
 .top-menu {
 	max-width: 85%;
 	margin: 10px auto 0 auto;
 	padding: 0 5px !important;
+	text-align: center;
 }
 
 .size {
@@ -305,6 +309,7 @@ div {
 	border: 2px groove darkgray;
 	border-radius: 1em;
 	margin: 0;
+	text-align: left;
 }
 .dropdown:hover .dropdown-content {
 	display:block;
