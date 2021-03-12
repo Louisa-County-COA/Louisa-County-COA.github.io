@@ -248,14 +248,15 @@ var toggleFontSize = function() {
 };
 
 // Dropdown submenus for minutes and board reports
+
 $("#reports-list").hide();
 $("#minutes-list").hide();
 
 $(document).ready(function(){
-  $(".submenu-button").on("click", function MenuToggle(e){
+  $(".submenu-button").on("click", function(e){
     $(this).next('ul').toggle();
-	e.preventDefault();
-	});
+    e.preventDefault();
+  });
 });
 
 // Slideshow
