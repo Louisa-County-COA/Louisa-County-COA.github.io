@@ -67,18 +67,18 @@
 	    <button>ABOUT</button>
 		<ul class="dropdown-content">
 			<li class="dropdown-submenu">
-			<a href="#" id="reports-button">BOARD REPORTS</a>
+			<a href="#" class="submenu-button">BOARD REPORTS</a>
 			<ul class="dropdown-content" id="reports-list">
-			    <li><a href="COA Report 12-18.pdf" target="_blank">2018 REPORT</a></li>
-				<li><a href="COA Report 12-19.pdf" target="_blank">2019 REPORT</a></li>
+			    <li><a href="COA Report 12-18.pdf" target="_blank">2018</a></li>
+				<li><a href="COA Report 12-19.pdf" target="_blank">2019</a></li>
 		    </ul>
 	        </li>
-			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
+			<li><a href="LCCA-bylaws.pdf">BYLAWS</a></li>
 			<li><a href="mailto:LCCOAinfo@gmail.com">EMAIL</a></li>
 			<li><a href="contact-list.html">MEMBER LIST</a></li>
 			<li><a href="#mission">MISSION</a></li>
 			<li class="dropdown-submenu">
-			<a href="#" id="minutes-button">MINUTES</a>
+			<a href="#" class="submenu-button">MINUTES</a>
 			<ul class="dropdown-content" id="minutes-list">
 			    <li><a href="2018-minutes.html">2018</a></li>
 				<li><a href="2019-minutes.html">2019</a></li>
@@ -248,19 +248,12 @@ var toggleFontSize = function() {
 };
 
 // Dropdown submenus for minutes and board reports
+
+$("#reports-list").hide();
 $("#minutes-list").hide();
 
 $(document).ready(function(){
-  $("#minutes-button").on("click", function(e){
-    $(this).next('ul').toggle();
-    e.preventDefault();
-  });
-});
-
-$("#reports-list").hide();
-
-$(document).ready(function(){
-  $("#reports-button").on("click", function(e){
+  $(".submenu-button").on("click", function(e){
     $(this).next('ul').toggle();
     e.preventDefault();
   });
