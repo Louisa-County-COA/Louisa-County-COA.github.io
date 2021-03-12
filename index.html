@@ -7,7 +7,7 @@
 	<meta name="description" content="Website for the Louisa County Commission on Aging.">
 	<meta name="author" content="Brendan Ferreri-Hanberry" />
 	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-	<meta name="dcterms.modified" content="2021-3-4" />
+	<meta name="dcterms.modified" content="2021-3-12" />
 	<meta name="viewport" content="width=device-width initial-scale=1" >
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
@@ -66,6 +66,13 @@
 		<li class="dropdown">
 	    <button>ABOUT</button>
 		<ul class="dropdown-content">
+			<li class="dropdown-submenu">
+			<a href="#" id="reports-button">BOARD REPORTS</a>
+			<ul class="dropdown-content" id="reports-list">
+			    <li><a href="COA Report 12-18.pdf" target="_blank">2018 REPORT</a></li>
+				<li><a href="COA Report 12-19.pdf" target="_blank">2019 REPORT</a></li>
+		    </ul>
+	        </li>
 			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
 			<li><a href="mailto:LCCOAinfo@gmail.com">EMAIL</a></li>
 			<li><a href="contact-list.html">MEMBER LIST</a></li>
@@ -172,23 +179,20 @@
 		</span>
 		</a>
 	</li>
-	<li class="dropdown">
-		<div>
-			<img src="document.png" class="menu-img" alt="Document" />
-			<span class="bottom-menu">
-			BOARD REPORTS
-			</span>
-		</div>
-		<ul class="dropdown-content">
-			<li><a href="COA Report 12-19.pdf" target="_blank">2019 REPORT</a></li>
-			<li><a href="COA Report 12-18.pdf" target="_blank">2018 REPORT</a></li>
-		</ul>
-	</li>
+
 	<li class="dropdown">
 		<a href="https://cv-adc.com/what-is-an-advance-directive"  target="_blank">
 			<img src="Advance-Directives1.png" class="menu-img" alt="advance directives question mark"/>
 			<span class="bottom-menu">
 			ADVANCE DIRECTIVES
+			</span>
+		</a>
+	</li>
+	<li class="dropdown">
+		<a href="Transportation-Resource-Guide.pdf"  target="_blank">
+			<img src="transportation.png" class="menu-img" alt="car"/>
+			<span class="bottom-menu">
+			TRANSPORTATION GUIDE
 			</span>
 		</a>
 	</li>
@@ -248,6 +252,15 @@ $("#minutes-list").hide();
 
 $(document).ready(function(){
   $("#minutes-button").on("click", function(e){
+    $(this).next('ul').toggle();
+    e.preventDefault();
+  });
+});
+
+$("#reports-list").hide();
+
+$(document).ready(function(){
+  $("#reports-button").on("click", function(e){
     $(this).next('ul').toggle();
     e.preventDefault();
   });
