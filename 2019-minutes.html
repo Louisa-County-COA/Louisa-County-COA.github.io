@@ -19,39 +19,6 @@
 </head>
 <body>
 <div id="container">
-<script>
-// Toggle font size
-var toggleFontSize = function() {
-    button = $("button").css("font-size");
-	console.log(button);
-	if (button == "16px") {
-		$("button").css("font-size", "small");
-		$("li").css("font-size", "small");
-		$("section").css("font-size", "medium");
-		$("footer").css("font-size", "medium");
-	}
-	else {
-		$("button").css("font-size", "medium");
-		$("li").css("font-size", "medium");
-		$("section").css("font-size", "large");
-		$("footer").css("font-size", "large");
-	}
-};
-
-// Dropdown submenus for minutes and board reports
-
-$("#reports-list").hide();
-$("#minutes-list").hide();
-
-$(document).ready(function(){
-  $(".submenu-button").on("click", function(e){
-    $(this).next('ul').toggle();
-    e.preventDefault();
-  });
-});
-
-
-</script>
 
 <div class="heading">
 	<h1>
@@ -192,5 +159,35 @@ $(document).ready(function(){
 	</footer>
 </div>
 </div>
+<script>
+// Toggle font size
+var toggleFontSize = function() {
+    button = $("button").css("font-size");
+	console.log(button);
+	if (button == "16px") {
+		$("button").css("font-size", "small");
+		$("li").css("font-size", "small");
+		$("section").css("font-size", "medium");
+		$("footer").css("font-size", "medium");
+	}
+	else {
+		$("button").css("font-size", "medium");
+		$("li").css("font-size", "medium");
+		$("section").css("font-size", "large");
+		$("footer").css("font-size", "large");
+	}
+};
+
+// Dropdown submenus for minutes and board reports
+$("#reports-list").hide();
+$("#minutes-list").hide();
+
+$(document).ready(function(){
+  $(".submenu-button").on("click", function(e){
+    $(this).next('ul').toggle();
+    e.preventDefault();
+  });
+});
+</script>
 </body>
 </html>
