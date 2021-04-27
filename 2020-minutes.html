@@ -63,6 +63,8 @@ $(document).ready(function(){
 		<button id="toggleButton" class="toggle" onclick="toggleFontSize()">TOGGLE FONT SIZE</button>
 	</div>
 </div>
+
+<!-- Top menu -->
 <menu class="top-menu">
 	<li class="dropdown">
 		<button>GET INVOLVED</button>
@@ -81,23 +83,33 @@ $(document).ready(function(){
 	<li class="dropdown">
 		<button>RESOURCES</button>
 		<ul class="dropdown-content">
-		    <li><a href="Quick Guide to Louisa Resources.pdf" target="_blank">LOUISA COUNTY RESOURCE GUIDE</a></li>
+		    <li><a href="COVID Street Sheet.pdf" target="_blank">COVID RESOURCES</a></li>
+		    <li><a href="Quick Guide to Louisa Resources.pdf" target="_blank">LOUISA COUNTY RESOURCES</a></li>
 			<li><a href="https://jabacares.org" target="_blank"><abbr title="Jefferson Area Board for Aging">JABA</abbr></a></li>
-			<li><a href="https://www.benefitscheckup.org"  target="_blank">BENEFITS CHECKUP</a></li>
-			<li><a href="https://www.aarp.org" target="_blank"><abbr title="American Association of Retired Persons">AARP</abbr></a></li>
-			<li><a href="https://www.ncoa.org" target="_blank"><abbr title="National Council on Aging">NCOA</abbr></a></li>
 			<li><a href="https://acl.gov/programs" target="_blank"><abbr title="Administration for Community Living">ACL</abbr></a></li>
+			<li><a href="https://www.aarp.org" target="_blank"><abbr title="American Association of Retired Persons">AARP</abbr></a></li>
+			<li><a href="https://www.benefitscheckup.org"  target="_blank">BENEFITS CHECKUP</a></li>
+			<li><a href="https://www.ncoa.org" target="_blank"><abbr title="National Council on Aging">NCOA</abbr></a></li>
+			<li><a href="https://seniornavigator.org" target="_blank">SENIOR NAVIGATOR</a></li>
 		</ul>
 	</li>
 		<li class="dropdown">
 	    <button>ABOUT</button>
 		<ul class="dropdown-content">
-			<li><a href="LCCA-bylaws.pdf" download>BYLAWS</a></li>
+			<li class="dropdown-submenu">
+			<a href="#" class="submenu-button">BOARD REPORTS</a>
+			<ul class="dropdown-content" id="reports-list">
+			    <li><a href="COA Report 12-18.pdf" target="_blank">2018</a></li>
+				<li><a href="COA Report 12-19.pdf" target="_blank">2019</a></li>
+				<li><a href="COA Report 2020.pdf" target="_blank">2020</a></li>
+		    </ul>
+	        </li>
+			<li><a href="LCCA-bylaws.pdf">BYLAWS</a></li>
 			<li><a href="mailto:LCCOAinfo@gmail.com">EMAIL</a></li>
 			<li><a href="contact-list.html">MEMBER LIST</a></li>
-			<li><a href="index.html#mission">MISSION</a></li>
+			<li><a href="#mission">MISSION</a></li>
 			<li class="dropdown-submenu">
-			<a href="#" id="minutes-button">MINUTES</a>
+			<a href="#" class="submenu-button">MINUTES</a>
 			<ul class="dropdown-content" id="minutes-list">
 			    <li><a href="2018-minutes.html">2018</a></li>
 				<li><a href="2019-minutes.html">2019</a></li>
