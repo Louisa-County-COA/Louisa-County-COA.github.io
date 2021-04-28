@@ -135,6 +135,12 @@ menu {
 	.small {
 		display:none;
 	}
+	.carousel {
+	padding: 0;
+	}
+	.prev, .next {
+		padding: 6px;
+	}
 }
 
 @media (min-width: 37em)
@@ -143,8 +149,13 @@ menu {
 	max-height:2em !important;
 	max-width:2em !important;
 	margin: -0.3em 0.5em 0 -0.5em !important;
-}
-
+	}
+	.carousel {
+		padding: 0.625em;
+	}
+	.prev, .next {
+		padding: 16px;
+	}
 }
 
 @media (min-width: 51em)
@@ -480,7 +491,6 @@ section {
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
   color: white;
   font-weight: bold;
   font-size: 18px;
