@@ -1,4 +1,4 @@
-/*Last updated 4-27-2021*/
+/*Last updated 5-2-2021*/
 
 /*Begin media queries based on screen width*/
 
@@ -10,14 +10,7 @@
 body {
 	width: 80%;
 }
-.caption
-{
-    font-size: 12px;
-    padding: 4px 12px;
-    position: absolute;
-    bottom: 16px;
-    width: 90%;
-}
+
 .banner-article
 {
 	font-size: 22px;
@@ -69,14 +62,6 @@ span {
 body
 {
 	width: 80%;
-}
-.caption 
-{
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 16px;
-    width: 90%;
 }
 
 span {
@@ -135,11 +120,25 @@ menu {
 	.small {
 		display:none;
 	}
+	.caption
+    {
+    font-size: 12px;
+    padding: 4px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    }
 	.carousel {
 	padding: 0;
 	}
 	.prev, .next {
 		padding: 6px;
+	}
+	.mySlides {
+	    padding: 0.25em;
+}
+    div {
+		padding: 0.25em;
 	}
 }
 
@@ -150,11 +149,24 @@ menu {
 	max-width:2em !important;
 	margin: -0.3em 0.5em 0 -0.5em !important;
 	}
+	.caption {
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 16px;
+    width: 90%;
+    }
 	.carousel {
 		padding: 0.625em;
 	}
 	.prev, .next {
 		padding: 16px;
+	}
+	.mySlides {
+		padding: 1.5em;
+	}
+	div {
+		padding: 0.625em;
 	}
 }
 
@@ -320,9 +332,9 @@ button {
 
 div {
 	background-color: transparent;
-    padding: 0.625em;
 	font-size: 1em;
 }
+
 /* The dots/bullets on the carousel */
 .dot {
   cursor: pointer;
@@ -334,6 +346,7 @@ div {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+
 .dropdown
 {
 	display:inline-block;
@@ -376,7 +389,6 @@ div {
 .mySlides
 {
 	display: none;
-	padding: 1.5em;
 	position: relative;
 }
 
@@ -401,7 +413,6 @@ form {
 	display: flex;
 	margin: 0 -1em 0 0;
 }
-
 
 .heading {
 	border: 5px groove gray;
@@ -497,7 +508,7 @@ section {
   transition: 0.6s ease;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with transparency */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   text-decoration: none;
