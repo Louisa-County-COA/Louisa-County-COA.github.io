@@ -1,4 +1,4 @@
-/*Last updated 5-2-2021*/
+/*Last updated 5-3-2021*/
 
 /*Begin media queries based on screen width*/
 
@@ -120,6 +120,10 @@ menu {
 	.small {
 		display:none;
 	}
+	.bottom-menu li {
+		display: block;
+		text-align: center;
+	}
 	.caption
     {
     font-size: 12px;
@@ -148,6 +152,9 @@ menu {
 	max-height:2em !important;
 	max-width:2em !important;
 	margin: -0.3em 0.5em 0 -0.5em !important;
+	}
+	.bottom-menu li {
+		display: inline-block;
 	}
 	.caption {
     font-size: 15px;
