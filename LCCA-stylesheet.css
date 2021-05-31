@@ -1,4 +1,4 @@
-/*Last updated 5-3-2021*/
+/*Last updated 5-31-2021*/
 
 /*Begin media queries based on screen width*/
 
@@ -14,6 +14,7 @@ body {
 .banner-article
 {
 	font-size: 22px;
+	width: 90%
 }
 .contacts {
 	column-count: 1;
@@ -84,6 +85,7 @@ h2 {
 .banner-article
 {
 	font-size: 28px;
+	width:90%;
 }
 .contacts {
 	column-count: 2;
@@ -192,6 +194,7 @@ body {
 .banner-article
 {
 	font-size: 32px;
+	width: 70%;
 }
 
 .contacts {
@@ -243,6 +246,10 @@ menu {
 	.top-menu {
 		max-width: 67%;
 	}
+	.banner-article
+{
+	width: 70%;
+}
 }
 
 @media (min-width: 90em)
@@ -250,6 +257,10 @@ menu {
 	.top-menu {
 		max-width: 55%;	
 	}
+	.banner-article
+{
+	width: 70%;
+}
 }
 @media (min-width: 95em)
 {
