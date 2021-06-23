@@ -7,7 +7,7 @@
 	<meta name="description" content="Website for the Louisa County Commission on Aging.">
 	<meta name="author" content="Brendan Ferreri-Hanberry" />
 	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-	<meta name="dcterms.modified" content="2021-05-10" />
+	<meta name="dcterms.modified" content="2021-06-23" />
 	<meta name="viewport" content="width=device-width initial-scale=1" >
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="LCCA-stylesheet.css" />
@@ -37,7 +37,7 @@
 		</a>
 	</h1>
 	<div class="right size">
-		<button id="toggleButton" class="toggle" onclick="toggleFontSize()">DECREASE FONT SIZE</button>
+		<button id="toggleButton" class="toggle" onclick="toggleFontSize()">INCREASE FONT SIZE</button>
 	</div>
 </div>
 
@@ -175,18 +175,18 @@
 var toggleFontSize = function() {
     button = $("button").css("font-size");
 	console.log(button);
-	if (button == "16px") {
-		$("button").css("font-size", "small");
-		$("li").css("font-size", "small");
-		$("section").css("font-size", "medium");
-		$("footer").css("font-size", "medium");
+	if (button == "20px") {
+		$("button").css("font-size", "16px");
+		$("li").css("font-size", "16px");
+		$("section").css("font-size", "18px");
+		$("footer").css("font-size", "18px");
 		$("#toggleButton").html("INCREASE FONT SIZE");
 	}
 	else {
-		$("button").css("font-size", "medium");
-		$("li").css("font-size", "medium");
-		$("section").css("font-size", "large");
-		$("footer").css("font-size", "large");
+		$("button").css("font-size", "20px");
+		$("li").css("font-size", "20px");
+		$("section").css("font-size", "20px");
+		$("footer").css("font-size", "20px");
 		$("#toggleButton").html("DECREASE FONT SIZE");
 	}
 };
