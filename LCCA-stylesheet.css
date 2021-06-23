@@ -244,7 +244,7 @@ menu {
 @media (min-width: 75em) and (max-width: 90em)
 {
 	.top-menu {
-		max-width: 67%;
+		max-width: 78%;
 	}
 	.banner-article
 {
@@ -255,7 +255,7 @@ menu {
 @media (min-width: 90em)
 {
 	.top-menu {
-		max-width: 55%;	
+		max-width: 70%;	
 	}
 	.banner-article
 {
