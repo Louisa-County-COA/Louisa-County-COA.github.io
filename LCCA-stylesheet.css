@@ -27,6 +27,9 @@ body {
 	margin: 10px;
 	font-size: 1.5em;
 }
+.content {
+    margin: 5px auto;
+}
 h1 {
 	padding: 0.625em;
 	margin: 0;
@@ -100,6 +103,9 @@ h2 {
 	column-span: all;
 	margin: 10px;
 	font-size: 1.5em;
+}
+.content {
+	margin: 5px 10%;
 }
 menu {
 	clear: both;
@@ -206,6 +212,9 @@ body {
 	color: black;
 	font-size: large;
 }
+.content {
+	margin: 5px 15%;
+}
 h1 {
 	font-size: 42px;
 	display: block;
@@ -253,6 +262,9 @@ menu {
 {
 	width: 70%;
 }
+    .content {
+		margin: 5px 20%;
+	}
 }
 
 @media (min-width: 90em)
@@ -264,6 +276,9 @@ menu {
 {
 	width: 90%;
 }
+    .content {
+		margin: 5px 20%;
+	}
 }
 @media (min-width: 95em)
 {
@@ -339,7 +354,6 @@ button {
 }
 
 .content {
-	margin: 5px auto;
 	font-size: large;
 	color: black;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
