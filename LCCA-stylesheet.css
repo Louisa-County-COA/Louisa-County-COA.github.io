@@ -35,6 +35,8 @@ h1 {
 }
 h2 {
 	font-size: 1.5em;
+	margin: 0.5em 0;
+	
 }
 
 menu {
@@ -81,6 +83,7 @@ h1 {
 }
 h2 {
 	font-size: 1.5em;
+	margin: 0.4em 0;
 }
 .banner-article
 {
@@ -211,7 +214,7 @@ h1 {
 }
 h2 {
 	font-size: 2em;
-	margin: 0.5em 0;
+	margin: 0.4em 0;
 }
 .contacts h2 {
 	column-span: all;
