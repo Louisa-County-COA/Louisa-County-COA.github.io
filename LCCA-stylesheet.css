@@ -1,4 +1,4 @@
-/*Last updated 6-15-2021*/
+/*Last updated 7-20-2021*/
 
 /*Begin media queries based on screen width*/
 
@@ -305,7 +305,9 @@ h2 a {
 	color: white;
 	font-family: "Times New Roman";
 }
-
+h2 a:hover {
+	text-shadow: 2px 2px grey;
+}
 a.title:hover {
 	text-decoration: none !important;
 }
