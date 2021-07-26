@@ -11,7 +11,7 @@ body {
 	width: 80%;
 }
 
-.banner-article
+.banner-article, .banner-note
 {
 	font-size: 22px;
 	width: 90%
@@ -88,7 +88,7 @@ h2 {
 	font-size: 1.5em;
 	margin: 0.4em 0;
 }
-.banner-article
+.banner-article, .banner-note
 {
 	font-size: 28px;
 	width:90%;
@@ -200,7 +200,7 @@ menu {
 body {
     width: 70%;		
 }
-.banner-article
+.banner-article, .banner-note
 {
 	font-size: 32px;
 	width: 70%;
@@ -258,7 +258,7 @@ menu {
 	.top-menu {
 		max-width: 78%;
 	}
-	.banner-article
+	.banner-article, .banner-note
 {
 	width: 70%;
 }
@@ -272,7 +272,7 @@ menu {
 	.top-menu {
 		max-width: 70%;	
 	}
-	.banner-article
+	.banner-article, .banner-note
 {
 	width: 90%;
 }
@@ -332,6 +332,19 @@ a.title:hover {
 	text-align: center;
 	color: black;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
+}
+.banner-note {
+	display: block;
+	font-style: italic;
+	clear: both;
+	background-color: transparent;
+	border: 5px groove gray;
+	padding: .25em;
+	color: white;
+	margin: 5px auto;
+	text-align: center;
+	color: black;
+	background: linear-gradient(#009900 15%, #006600 100%);
 }
 
 body {
