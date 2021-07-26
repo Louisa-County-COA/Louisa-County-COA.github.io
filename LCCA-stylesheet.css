@@ -491,6 +491,8 @@ li {
 }
 .news {
 	text-align: center;
+	color: orange;
+	text-shadow: 1px 1px gray;
 }
 
 
