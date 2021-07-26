@@ -296,7 +296,9 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-
+.banner-article a:hover {
+	text-shadow: 1px 1px grey;
+}
 abbr {
 	text-decoration: none !important;
 	font-variant: none;
