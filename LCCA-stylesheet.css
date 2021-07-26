@@ -1,4 +1,4 @@
-/*Last updated 7-20-2021*/
+/*Last updated 7-26-2021*/
 
 /*Begin media queries based on screen width*/
 
@@ -365,6 +365,7 @@ button {
 	text-align: left;
 	font-size: 1.2em;
 	color: orange;
+	text-shadow: 1px 1px gray;
 }
 
 div {
