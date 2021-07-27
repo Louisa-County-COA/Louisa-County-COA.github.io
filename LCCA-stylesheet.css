@@ -586,6 +586,7 @@ section {
 	border: 3px outset darkgray;
 	padding: .35em;
 	background: linear-gradient(#009900 15%, #003300 100%);
+	cursor: pointer;
 }
 @-webkit-keyframes fade {
   from {opacity: .4}
