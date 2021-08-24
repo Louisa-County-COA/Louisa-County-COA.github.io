@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>
+	Little Yellow Book
+	</title>
+	<meta name="description" content="Little Yellow Book - senior assistance directory 
+	from the Louisa County Commission on Aging.">
+	<meta name="author" content="Brendan Ferreri-Hanberry">
+	<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
+	<meta name="dcterms.modified" content="2021-08-19">
+	<meta name="viewport" content="width=device-width initial-scale=1" >
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="LYB-stylesheet.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+
+<div class="heading">
+	<h1>
+		<a href="#" class="title">
+			<img class="left small" src="yellow-phonebook.webp" alt="Louisa County Seal" />
+			<span class="title-text">JABA
+			<br />
+			Little Yellow Books
+			</span>
+		</a>
+	</h1>
+	<div class="right size">
+		<div class="right">
+		<button id="toggleButton" class="toggle" onclick="toggleFontSize()">TOGGLE FONT SIZE</button>
+		</div>
+	</div>
+</div>
+<div>
+</div>
+
+<div>
+	<section class="content">
+	    <h2>Under Construction</h2>
+		This will be the site for the Little Yellow Books of all areas served by the Jefferson Area Board for Aging – the city of Charlottesville 
+		and the counties of Albemarle, Fluvanna, Greene, Louisa and Nelson. 
+		These are directories for various resources of interest to local residents. 
+		The site is currently under construction; please check back later!
+		<br />
+		<br />
+		For more information, please click the email link below.
+	</section>
+</div>
+<hr />
+<menu>
+	<li>
+		<a href="" target="_blank">
+		<img src="Albemarle-County-seal.png" class="menu-img" alt="Albemarle County seal" />
+		<span class="bottom-menu">
+		ALBEMARLE COUNTY
+		</span>
+		</a>
+	</li>
+	<li>
+		<a href="" target="_blank">
+		<img src="Charlottesville-seal.png" class="menu-img" alt="Charlottesville seal"/>
+		<span class="bottom-menu">
+		CHARLOTTESVILLE
+		</span>
+		</a>
+	</li>
+	<li>
+		<a href=""  target="_blank">
+			<img src="Fluvanna-county-seal.png" class="menu-img" alt="Fluvanna County seal"/>
+			<span class="bottom-menu">
+			FLUVANNA COUNTY
+			</span>
+		</a>
+	</li>
+	<li>
+		<a href=""  target="_blank">
+			<img src="Greene-County-seal2.gif" class="menu-img" alt="Greene County seal"/>
+			<span class="bottom-menu">
+			GREENE COUNTY
+			</span>
+		</a>
+	</li>
+	<li>
+		<a href="https://louisa-county-coa.github.io/Little-Yellow-Book.pdf"  target="_blank">
+		<img src="Louisa-County-Seal-color.webp" class="menu-img" alt="Louisa County Seal"/>
+		<span class="bottom-menu">
+		LOUISA COUNTY
+		</span>
+		</a>
+	</li>
+	<li>
+		<a href=""  target="_blank">
+		<img src="Nelson-county-seal.png" class="menu-img" alt="Nelson County Seal"/>
+		<span class="bottom-menu">
+		NELSON COUNTY
+		</span>
+		</a>
+	</li>
+</menu>
+
+<hr />
+<div>
+	<footer>
+    <a href="mailto:info@jabacares.org">Email</a> | 674 Hillsdale Drive, Suite 9, Charlottesville, VA 22901 | &copy; 2021 Jefferson Area Board for Aging. All rights reserved.
+	</footer>
+</div>
+</div>
+<script>
+// Toggle font size
+var toggleFontSize = function() {
+    button = $("button").css("font-size");
+	console.log(button);
+	if (button == "16px") {
+		$("button").css("font-size", "small");
+		$("li").css("font-size", "small");
+		$("section").css("font-size", "medium");
+		$("footer").css("font-size", "medium");
+	}
+	else {
+		$("button").css("font-size", "medium");
+		$("li").css("font-size", "medium");
+		$("section").css("font-size", "large");
+		$("footer").css("font-size", "large");
+	}
+};
+
+</script>
+</body>
+</html>
