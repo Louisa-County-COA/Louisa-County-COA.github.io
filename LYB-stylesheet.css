@@ -174,7 +174,7 @@ footer {
 	padding: 0.625em;
 }
 
-.heading {
+.header {
 	border: 5px groove gray;
 	background: linear-gradient(#ffd24d 25%, #e6ac00 85%);
     min-height: 8.5em;
