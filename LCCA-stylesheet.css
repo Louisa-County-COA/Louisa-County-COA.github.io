@@ -467,7 +467,7 @@ form {
 	margin: 0 -1em 0 0;
 }
 
-.heading {
+.header {
 	border: 5px groove gray;
 	background: linear-gradient(#009900 15%, #006600 100%); /*linear-gradient(#009900 15%, #003300 100%);*/
     min-height: 8.5em;
