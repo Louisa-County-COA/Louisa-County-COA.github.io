@@ -188,7 +188,6 @@ img {
 	border-radius: 5px;
 }
 
-
 .left {
 	float:left;
 }
@@ -220,9 +219,6 @@ section {
 	color: white;
 }
 
-.title-text {
-    float: left;
-}
 .toggle {
 	color: white;
 	font-size: medium;
