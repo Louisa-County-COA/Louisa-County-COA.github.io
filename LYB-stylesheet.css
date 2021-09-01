@@ -21,7 +21,7 @@ h2 {
 	font-size: 1.5em;
 }
 
-menu {
+.menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
@@ -70,7 +70,7 @@ h1 {
 h2 {
 	font-size: 1.5em;
 }
-menu {
+.menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
@@ -97,7 +97,7 @@ h2 {
 	font-size: 2em;
 	margin: 0.5em 0;
 }
-menu {
+.menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
