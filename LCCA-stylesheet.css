@@ -42,7 +42,7 @@ h2 {
 	
 }
 
-menu {
+.menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
@@ -107,7 +107,7 @@ h2 {
 .content {
 	margin: 5px 10%;
 }
-menu {
+.menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
@@ -230,7 +230,7 @@ h2 {
 	margin: 10px;
 	font-size: 2em;
 }
-menu {
+.menu {
 	clear: both;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
