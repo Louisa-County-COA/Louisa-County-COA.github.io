@@ -1,4 +1,4 @@
-/*Last updated 7-26-2021*/
+/*Last updated 11-22-2021*/
 
 /*Begin media queries based on screen width*/
 
@@ -256,7 +256,7 @@ h2 {
 @media (min-width: 75em) and (max-width: 90em)
 {
 	.top-menu {
-		max-width: 78%;
+		max-width: 90%;
 	}
 	.banner-article, .banner-note
 {
@@ -270,7 +270,7 @@ h2 {
 @media (min-width: 90em)
 {
 	.top-menu {
-		max-width: 70%;	
+		max-width: 75%;	
 	}
 	.banner-article, .banner-note
 {
