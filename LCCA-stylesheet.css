@@ -1,4 +1,4 @@
-/*Last updated 11-22-2021*/
+/*Last updated 04-08-2022*/
 
 /*Begin media queries based on screen width*/
 
@@ -278,12 +278,6 @@ h2 {
 }
     .content {
 		margin: 5px 20%;
-	}
-}
-@media (min-width: 95em)
-{
-	.bottom-menu{
-		max-width: 90%;
 	}
 }
 
