@@ -1,4 +1,4 @@
-/*Last updated 04-08-2022*/
+/*Last updated 05-23-2022*/
 
 /*Begin media queries based on screen width*/
 
@@ -76,7 +76,7 @@ span {
 
 }
 
-@media (min-width: 30em) and (max-width: 53em)
+@media (min-width: 30em) and (max-width: 57em)
 {
 h1 {
 	font-size: 32px;
@@ -126,7 +126,7 @@ h2 {
 }
 }
 
-@media (max-width: 37em)
+@media (max-width: 39em)
 {
 	.small {
 		display:none;
@@ -157,12 +157,12 @@ h2 {
 	}
 }
 
-@media (min-width: 37em)
+@media (min-width: 39em)
 {
 	.small {
-	max-height:2em !important;
-	max-width:2em !important;
-	margin: -0.3em 0.5em 0 -0.5em !important;
+	max-height:3em !important;
+	max-width:3em !important;
+	margin: -0.85em 0.5em 0 -0.5em !important;
 	}
 	.bottom-menu li {
 		display: inline-block;
@@ -195,7 +195,7 @@ h2 {
 	}
 }
 
-@media (min-width: 53em)
+@media (min-width: 57em)
 {
 body {
     width: 70%;		
@@ -282,7 +282,6 @@ h2 {
 }
 
 /*End media queries based on screen width*/
-
 a {
 	text-decoration: none;
 	color: black;
