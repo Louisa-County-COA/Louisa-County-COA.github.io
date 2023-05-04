@@ -1,4 +1,4 @@
-/*Last updated 05-23-2022*/
+/*Last updated 05-04-2023*/
 
 /*Begin media queries based on screen width*/
 
@@ -343,7 +343,7 @@ a.title:hover {
 }
 
 body {
-	background-image: url("old-couple-walking.webp");
+	background-image: url("old-couple-walking2.webp");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
