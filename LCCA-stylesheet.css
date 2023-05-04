@@ -493,6 +493,7 @@ li {
 }
 .minutes {
 	font-size: large;
+	text-shadow: 1px 1px gray;
 }
 .minutes a{
 	color: white;
