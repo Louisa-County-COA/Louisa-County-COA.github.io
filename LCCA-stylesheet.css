@@ -1,4 +1,4 @@
-/*Last updated 05-04-2023*/
+/*Last updated 06-28-2023*/
 
 /*Begin media queries based on screen width*/
 
@@ -138,7 +138,7 @@ h2 {
 	.caption
     {
     font-size: 12px;
-    padding: 4px 12px;
+    padding: 0px 12px;
     position: absolute;
     bottom: 0;
     width: 90%;
@@ -150,7 +150,7 @@ h2 {
 		padding: 6px;
 	}
 	.mySlides {
-	    padding: 0.25em;
+	    padding: 0em;
 }
     div {
 		padding: 0.25em;
@@ -169,9 +169,9 @@ h2 {
 	}
 	.caption {
     font-size: 15px;
-    padding: 8px 12px;
+    padding: 0px 12px;
     position: absolute;
-    bottom: 16px;
+    bottom: 12px;
     width: 90%;
     }
 	.carousel {
@@ -181,7 +181,7 @@ h2 {
 		padding: 16px;
 	}
 	.mySlides {
-		padding: 1.5em;
+		padding: 0.75em;
 	}
 	div {
 		padding: 0.625em;
