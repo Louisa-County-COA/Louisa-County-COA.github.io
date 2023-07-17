@@ -1,4 +1,4 @@
-/*Last updated 06-28-2023*/
+/*Last updated 07-17-2023*/
 
 /*Begin media queries based on screen width*/
 
@@ -452,6 +452,18 @@ footer {
 	border: 5px groove gray;
 	background: linear-gradient(lightgray 15%, darkgray 85%);
 	padding: 0.625em;
+}
+footer ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+footer li {
+	display: inline-block;
+	text-transform: none;	
+	margin: 0;
+	font-style: italic;
+	font-size: 18px;
 }
 form {
 	font-size: medium;
