@@ -462,6 +462,7 @@ footer li {
 	display: inline-block;
 	text-transform: none;	
 	margin: 0;
+	font-style: italic;
 }
 form {
 	font-size: medium;
