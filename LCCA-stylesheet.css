@@ -1,4 +1,4 @@
-/*Last updated 07-17-2023*/
+/*Last updated 10-19-2023*/
 
 /*Begin media queries based on screen width*/
 
@@ -90,9 +90,16 @@ h2 {
 }
 .banner-article, .banner-note
 {
-	font-size: 28px;
 	width:90%;
 }
+.banner-article
+{
+	font-size: 28px;
+}
+.banner-note
+{
+	font-size: 24px;
+}		
 .contacts {
 	column-count: 2;
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
@@ -202,8 +209,15 @@ body {
 }
 .banner-article, .banner-note
 {
-	font-size: 32px;
 	width: 70%;
+}
+.banner-article
+{
+	font-size: 32px;
+}
+.banner-note
+{
+	font-size: 24px;
 }
 
 .contacts {
@@ -334,10 +348,10 @@ a.title:hover {
 	clear: both;
 	background-color: transparent;
 	border: 5px groove gray;
-	padding: .25em;
+	padding: 0em .5em;
 	color: white;
 	margin: 5px auto;
-	text-align: center;
+	text-align: left;
 	color: black;
 	background: linear-gradient(#009900 15%, #006600 100%);
 }
