@@ -1,4 +1,4 @@
-/*Last updated 10-19-2023*/
+/*Last updated 04-24-2024*/
 
 /*Begin media queries based on screen width*/
 
@@ -47,6 +47,9 @@ h2 {
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
 	margin: 0 auto;
+}
+.news {
+	font-size: 1.5em;
 }
 .top-menu {
 	max-width: 100%;
@@ -119,6 +122,9 @@ h2 {
 	background: radial-gradient(#ffd24d 25%, #e6ac00 85%);
 	border: 5px groove gray;
 	margin: 0 auto;
+}
+.news {
+	font-size: 1.75em;
 }
 .top-menu {
 	max-width: 100%;
@@ -261,6 +267,9 @@ h2 {
 	margin: 10px auto 0 auto;
 	padding: 0 5px !important;
 	text-align: center;
+}
+.news {
+	font-size: 2.2em;
 }
 .size {
     margin: -4em 0 0 0;	
@@ -528,8 +537,9 @@ li {
 	text-align: center;
 	color: orange;
 	text-shadow: 1px 1px gray;
+	background: rgba(0,0,0,0.3);
+	padding: 0.5em;
 }
-
 
 .right {
 	float:right;
